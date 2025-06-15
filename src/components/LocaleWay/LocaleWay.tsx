@@ -6,14 +6,14 @@ import TiltedCard from "../../ui/TiltedCard/TiltedCard";
 
 export default function LocaleWay(): ReactElement {
   return (
-    <section className="h-fit flex flex-col items-center justify-between gap-y-15 font-hunnin">
+    <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 py-5 font-hunnin bg-linear-to-t from-0% from-esmerald/70 to-40% to-white-default">
       <div className="flex flex-col items-center justify-between h-fit">
         <TitleSectionColored title={LocaleWayServiceData.title} />
         <p className="text-center text-lg w-5/8 text-black-default/80">
           {LocaleWayServiceData.description}
         </p>
       </div>
-      <div className="h-130 w-full flex flex-row items-center justify-between gap-x-4">
+      <div className="padding-h-content h-130 w-full flex flex-row items-center justify-between gap-x-4">
         {LocaleWayServiceData.services.map((el) => (
           <TiltedCard
             padding="0"
