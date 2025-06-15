@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Huninn&family=Ranchers&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-hunnin: "Huninn", sans-serif;
+  --font-ranchers: "Ranchers", sans-serif;
+  --color-esmerald: #3abcb6;
+  --color-white-default: #fff;
+  --color-black-default: #525252;
+}
+
+.padding-h-content {
+  @apply px-30;
+}
