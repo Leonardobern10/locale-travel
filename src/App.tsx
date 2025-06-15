@@ -1,5 +1,5 @@
 import LocaleWay from "./components/LocaleWay/LocaleWay";
-import OurLocaleStory from "./components/OurValue/OurLocaleStory";
+import OurValues from "./components/OurValue/OurValues";
 import Presentation from "./components/Presentation/Presentation";
 import { ImAirplane } from "react-icons/im";
 
@@ -12,7 +12,7 @@ function App() {
     >
       <Presentation />
       <LocaleWay />
-      <OurLocaleStory />
+      <OurValues />
     </div>
   );
 }
