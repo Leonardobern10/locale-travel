@@ -3,7 +3,6 @@ import TextValue from "./TextValue";
 import type { OurValueComponentProps } from "src/types/OurValueComponentProps";
 
 export default function OurValueComponent({
-  index,
   image,
   title,
   subtitle,
