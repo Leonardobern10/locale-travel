@@ -8,7 +8,7 @@ export default function TitleSectionColored(props: {
   return (
     <h2
       className={`text-4xl font-ranchers text-neutral-500/40 pt-10 ${
-        props.padding ? " p-4" : "p-0"
+        props.padding ? "p-4" : "p-0"
       }  tracking-widest`}
     >
       {string[0]}

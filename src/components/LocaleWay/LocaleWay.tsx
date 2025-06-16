@@ -8,7 +8,10 @@ export default function LocaleWay(): ReactElement {
   return (
     <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 py-5 font-hunnin bg-linear-to-t from-0% from-esmerald/70 to-40% to-white-default">
       <div className="flex flex-col items-center justify-between h-fit">
-        <TitleSectionColored title={LocaleWayServiceData.title} />
+        <TitleSectionColored
+          padding={true}
+          title={LocaleWayServiceData.title}
+        />
         <p className="text-center text-lg w-5/8 text-black-default/80">
           {LocaleWayServiceData.description}
         </p>
