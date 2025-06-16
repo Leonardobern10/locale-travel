@@ -12,7 +12,7 @@ export default function OurValueComponent({
   rightPosition,
 }: OurValueComponentProps): ReactElement {
   return (
-    <div
+    <article
       className={`w-full h-full flex ${
         rightPosition ? "flex-row-reverse" : "flex-row"
       } items-center justify-between `}
@@ -29,6 +29,6 @@ export default function OurValueComponent({
           linkName={linkName}
         />
       </div>
-    </div>
+    </article>
   );
 }

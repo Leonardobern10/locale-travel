@@ -6,7 +6,7 @@ import TiltedCard from "../../ui/TiltedCard/TiltedCard";
 
 export default function LocaleWay(): ReactElement {
   return (
-    <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 py-5 font-hunnin bg-linear-to-t from-0% from-esmerald/70 to-40% to-white-default">
+    <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 py-20 font-hunnin bg-linear-to-t from-0% from-esmerald/70 to-40% to-white-default">
       <div className="flex flex-col items-center justify-between h-fit">
         <TitleSectionColored
           padding={true}

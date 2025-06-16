@@ -17,7 +17,7 @@ export default function ManagementTravelService({
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="absolute bottom-0 h-fit w-full bg-esmerald/80 font-hunnin text-white-default">
-        <div className="flex flex-row items-center justify-start gap-x-5 p-2">
+        <div className="flex h-20 flex-row items-center justify-start gap-x-5 py-2 px-5">
           <div>
             <Icon className="w-10 h-10" />
           </div>
