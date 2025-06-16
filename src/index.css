@@ -7,6 +7,7 @@
   --color-esmerald: #3abcb6;
   --color-white-default: #fff;
   --color-black-default: #525252;
+  --shadow-offer: -20px 20px 100px #3abcb6;
 }
 
 .padding-h-content {
