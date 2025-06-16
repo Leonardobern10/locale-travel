@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
-import OurValueComponent from "./OurValueComponent";
 import { ourValueData } from "@data/OurValueData";
+import OurValueComponent from "./OurValueComponent";
 
 export default function OurValues(): ReactElement {
   return (
