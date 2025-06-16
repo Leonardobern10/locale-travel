@@ -9,14 +9,14 @@ export default function TextValue({
   subtitle,
   text1,
   text2,
-  buttonName,
+  linkName,
 }: ValueContentProps): ReactElement {
   return (
     <div className="h-full flex flex-col items-start justify-between gap-y-2 text-start font-hunnin">
       <TitleSectionColored padding={false} title={title} />
       <h4 className="text-neutral-800/50 font-bold text-xl">{subtitle}</h4>
       <ParagraphValue text1={text1} text2={text2} />
-      <Link linkName={buttonName} />
+      <Link linkName={linkName} />
     </div>
   );
 }

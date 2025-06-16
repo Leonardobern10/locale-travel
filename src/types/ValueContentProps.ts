@@ -3,5 +3,5 @@ export type ValueContentProps = {
   subtitle: string;
   text1: string;
   text2: string;
-  buttonName: string;
+  linkName: string;
 };
