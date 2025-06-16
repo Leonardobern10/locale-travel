@@ -4,7 +4,7 @@ import { ourValueData } from "@data/OurValueData";
 
 export default function OurValues(): ReactElement {
   return (
-    <section className="border-2 border-blue-600 w-screen h-fit">
+    <section className="w-screen h-fit">
       {ourValueData.map((el) => (
         <OurValueComponent
           key={el.index}
