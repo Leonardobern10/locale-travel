@@ -27,7 +27,7 @@
       "@images/*": ["src/assets/img/*"],
       "@data/*": ["src/data/*"],
       "@types/*": ["src/types/*"],
-      "@components/*": [".src/componentes/*"]
+      "@components/*": ["src/componentes/*"]
     }
   },
   "include": ["src"]
