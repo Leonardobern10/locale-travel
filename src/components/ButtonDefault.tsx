@@ -6,20 +6,23 @@ export default function ButtonDefault({
   buttonName,
   onClick,
   icon,
-  theme,
+  black,
 }: ButtonDefaultProps): ReactElement {
   const handleClick = (e: MouseEvent) => {
     e.stopPropagation();
     onClick(e);
   };
+
   return (
     <button
       onClick={handleClick}
-      className={` border-2 ${
+      className={`${
         icon ? "flex flex-row items-center justify-between w-fit" : ""
       } ${
-        theme === "black" ? "bg-black" : "bg-white-default"
-      } h-12 text-white text-lg py-2 px-7 font-hunnin rounded-2xl hover:cursor-pointer hover:scale-95`}
+        black
+          ? "bg-black-default text-white"
+          : "bg-white text-esmerald border-2 border-esmerald"
+      } h-12 text-lg py-2 px-7 font-hunnin rounded-4xl hover:cursor-pointer hover:scale-95`}
     >
       {buttonName}{" "}
       {icon && (
