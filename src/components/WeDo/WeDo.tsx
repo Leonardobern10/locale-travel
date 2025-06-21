@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import DoThis from "./DoThis";
 import TitleSectionColored from "../TitleSection";
+import { doThisData } from "@data/DoThisData";
 
 export default function WeDo(): ReactElement {
   return (
@@ -18,12 +19,14 @@ export default function WeDo(): ReactElement {
         </p>
       </div>
       <div className="grid grid-cols-3 grid-rows-2 w-5/6 h-fit place-content-center items-center gap-8">
-        <DoThis />
-        <DoThis />
-        <DoThis />
-        <DoThis />
-        <DoThis />
-        <DoThis />
+        {doThisData.map((el) => (
+          <DoThis
+            key={el.id}
+            icon={el.icon}
+            subtitle={el.subtitle}
+            text={el.text}
+          />
+        ))}
       </div>
     </section>
   );
