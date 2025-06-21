@@ -24,8 +24,7 @@ export default function OurValueComponent({
         <TextValue
           title={title}
           subtitle={subtitle}
-          text1={text1}
-          text2={text2}
+          paragraphs={[text1, text2]}
           linkName={linkName}
         />
       </div>
