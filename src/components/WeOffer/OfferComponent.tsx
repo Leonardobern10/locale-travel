@@ -1,6 +1,5 @@
 import type { OfferDataProps } from "src/types/OfferDataProps";
 import type { ReactElement } from "react";
-import Link from "../Link";
 import ButtonDefault from "../ButtonDefault";
 
 export default function OfferComponent({
@@ -33,6 +32,7 @@ export default function OfferComponent({
       >
         <h4 className="text-4xl text-white">{offerTitle}</h4>
         <ButtonDefault
+          black={false}
           buttonName={linkName}
           onClick={() => console.log("ola")}
         />

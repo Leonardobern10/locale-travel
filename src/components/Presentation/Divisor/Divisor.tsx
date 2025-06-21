@@ -12,6 +12,7 @@ export default function Divisor(): ReactElement {
         <Icon className="h-fit w-10" />
       </div>
       <ButtonDefault
+        black={true}
         onClick={() => console.log("ola")}
         buttonName={buttonText}
       />

@@ -4,5 +4,5 @@ export type ButtonDefaultProps = {
   buttonName: string | ReactNode;
   icon?: boolean;
   onClick: Function;
-  theme: string;
+  black: boolean;
 };
