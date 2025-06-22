@@ -2,6 +2,7 @@ import type { ReactElement } from "react";
 import TitleSectionColored from "../TitleSection";
 import ButtonDefault from "../ButtonDefault";
 import image from "@images/image_cel.png";
+import Input from "./Input";
 
 export default function ContactUs(): ReactElement {
   return (
@@ -18,10 +19,10 @@ export default function ContactUs(): ReactElement {
           />
           <p>Fill out the form below.</p>
           <form action="">
-            <input type="text" />
-            <input type="email" />
-            <input type="text" />
-            <textarea />
+            <Input placeholder="Full name" email={false} />
+            <Input placeholder="Email address" email={true} />
+            <Input placeholder="Subject" email={false} />
+            <textarea placeholder="Message" />
             <ButtonDefault
               buttonName="Submit"
               onClick={() => console.log("Ola")}
