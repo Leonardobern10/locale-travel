@@ -6,7 +6,7 @@ import FooterInfo from "./FooterInfo";
 
 export default function Footer(): ReactElement {
   return (
-    <footer className="pt-10 padding-h-content w-full h-fit bg-black-default flex flex-col items-center justify-evenly gap-y-10 font-hunnin">
+    <footer className="pt-20 padding-h-content w-full h-fit bg-black-default flex flex-col items-center justify-evenly gap-y-10 font-hunnin">
       <div className="w-25 h-25">
         <img
           className="w-full h-full"
