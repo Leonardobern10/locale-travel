@@ -5,7 +5,7 @@ import { doThisData } from "@data/DoThisData";
 
 export default function WeDo(): ReactElement {
   return (
-    <section className="w-screen flex flex-col gap-y-20 items-center justify-between">
+    <section className="w-screen flex flex-col gap-y-20 items-center justify-between pt-30">
       <div className="flex flex-col items-center justify-between">
         <TitleSectionColored
           white={false}

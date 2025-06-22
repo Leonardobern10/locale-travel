@@ -5,7 +5,7 @@ import OfferComponent from "./OfferComponent";
 
 export default function WeOffer(): ReactElement {
   return (
-    <section className="h-fit w-full bg-neutral-800 flex flex-col justify-between gap-y-20 font-hunnin py-10 pb-20">
+    <section className="h-fit w-full bg-neutral-800 flex flex-col justify-between gap-y-20 font-hunnin padding-v-content">
       <div className="text-center text-neutral-400 font-bold">
         <TitleSectionColored
           white={true}
