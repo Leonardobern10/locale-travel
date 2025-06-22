@@ -13,7 +13,7 @@ export default function TitleSectionColored(props: {
         props.white ? "text-white-default" : "text-neutral-500/40"
       } pt-10 ${props.padding ? "p-4" : "p-0"} ${
         props.center && "self-center"
-      } tracking-widest`}
+      } tracking-widest h-fit`}
     >
       {string[0]}
       <span className="text-esmerald px-2"> {string[1]} </span>
