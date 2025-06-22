@@ -1,4 +1,5 @@
 import ContactUs from "./components/ContactUs/ContactUs";
+import Invite from "./components/Invite/Invite";
 import LocaleWay from "./components/LocaleWay/LocaleWay";
 import OurValues from "./components/OurValue/OurValues";
 import Presentation from "./components/Presentation/Presentation";
@@ -17,6 +18,7 @@ function App() {
       <WeDo />
       <ReadAbout />
       <ContactUs />
+      <Invite />
     </div>
   );
 }
