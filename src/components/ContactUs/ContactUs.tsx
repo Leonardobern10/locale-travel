@@ -3,6 +3,7 @@ import TitleSectionColored from "../TitleSection";
 import ButtonDefault from "../ButtonDefault";
 import image from "@images/image_cel.png";
 import Input from "./Input";
+import Subtitle from "../Subtitle";
 
 export default function ContactUs(): ReactElement {
   return (
@@ -19,7 +20,7 @@ export default function ContactUs(): ReactElement {
               center={true}
               padding={true}
             />
-            <p>Fill out the form below.</p>
+            <Subtitle white={true} title="Fill out the form below." />
           </div>
           <form className="flex flex-col gap-y-8" action="">
             <Input placeholder="Full name" email={false} />
