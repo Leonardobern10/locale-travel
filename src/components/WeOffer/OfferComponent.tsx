@@ -10,11 +10,7 @@ export default function OfferComponent({
 }: OfferDataProps): ReactElement {
   const i = index % 2 === 0;
   return (
-    <div
-      className={`relative ${
-        i ? "self-end" : "self-start"
-      } shadow-offer h-fit w-3/5`}
-    >
+    <div className={`relative ${i ? "self-end" : "self-start"} h-fit w-3/5`}>
       <img
         className="w-full h-full object-cover"
         src={image}
@@ -23,7 +19,7 @@ export default function OfferComponent({
       <div
         className={`absolute inset-0 ${
           i ? "right-4/6" : "left-4/8"
-        } bg-esmerald/40 w-1/2 bg-opacity-50"`}
+        } bg-esmerald/40 w-1/2 shadow-offer bg-opacity-50"`}
       />
       <div
         className={`absolute bottom-20 ${

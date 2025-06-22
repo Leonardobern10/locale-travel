@@ -2,6 +2,7 @@ import type { ReactElement } from "react";
 import TitleSectionColored from "../TitleSection";
 import Link from "../Link";
 import { readAboutData } from "@data/ReadAboutData";
+import Subtitle from "../Subtitle";
 
 export default function ReadAbout(): ReactElement {
   return (
@@ -12,7 +13,7 @@ export default function ReadAbout(): ReactElement {
           padding={false}
           center={false}
         />
-        <p className="text-neutral-400 text-xl">{readAboutData.subtitle}</p>
+        <Subtitle white={false} title={readAboutData.subtitle} />
       </div>
       <div className="flex flex-row items-center justify-between gap-x-20">
         <div className="w-1/2 h-full">

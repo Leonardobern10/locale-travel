@@ -3,6 +3,7 @@ import ManagementTravelService from "./ManagementTravelService";
 import TitleSectionColored from "../TitleSection";
 import { LocaleWayServiceData } from "@data/LocalWayServiceData";
 import TiltedCard from "../../ui/TiltedCard/TiltedCard";
+import Subtitle from "../Subtitle";
 
 export default function LocaleWay(): ReactElement {
   return (
@@ -12,9 +13,7 @@ export default function LocaleWay(): ReactElement {
           padding={true}
           title={LocaleWayServiceData.title}
         />
-        <p className="text-center text-lg w-5/8 text-black-default/80">
-          {LocaleWayServiceData.description}
-        </p>
+        <Subtitle white={false} title={LocaleWayServiceData.description} />
       </div>
       <div className="padding-h-content h-130 w-full flex flex-row items-center justify-between gap-x-4">
         {LocaleWayServiceData.services.map((el) => (
