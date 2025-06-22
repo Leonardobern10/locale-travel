@@ -1,4 +1,5 @@
 import ContactUs from "./components/ContactUs/ContactUs";
+import Footer from "./components/Footer/Footer";
 import Invite from "./components/Invite/Invite";
 import LocaleWay from "./components/LocaleWay/LocaleWay";
 import OurValues from "./components/OurValue/OurValues";
@@ -19,6 +20,7 @@ function App() {
       <ReadAbout />
       <ContactUs />
       <Invite />
+      <Footer />
     </div>
   );
 }
