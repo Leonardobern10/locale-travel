@@ -13,7 +13,7 @@ export default function WeDo(): ReactElement {
           center={true}
           padding={true}
         />
-        <p className="text-neutral-500 text-lg border-2 w-3/4 text-center font-hunnin">
+        <p className="text-neutral-500 text-lg w-3/4 text-center font-hunnin">
           Learn about our travel management services for Corporate, Sports,
           Entertainment, Groups, Events and Leisure.
         </p>
