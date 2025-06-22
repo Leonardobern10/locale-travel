@@ -1,6 +1,7 @@
 import LocaleWay from "./components/LocaleWay/LocaleWay";
 import OurValues from "./components/OurValue/OurValues";
 import Presentation from "./components/Presentation/Presentation";
+import ReadAbout from "./components/ReadAbout/ReadAbout";
 import WeDo from "./components/WeDo/WeDo";
 
 import WeOffer from "./components/WeOffer/WeOffer";
@@ -13,6 +14,7 @@ function App() {
       <OurValues />
       <WeOffer />
       <WeDo />
+      <ReadAbout />
     </div>
   );
 }
