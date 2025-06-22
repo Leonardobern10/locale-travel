@@ -1,6 +1,7 @@
 import type { OfferDataProps } from "src/types/OfferDataProps";
-import type { ReactElement } from "react";
+import { useRef, type ReactElement } from "react";
 import ButtonDefault from "../ButtonDefault";
+import { useScroll } from "src/animation/scroll";
 
 export default function OfferComponent({
   index,
@@ -9,17 +10,24 @@ export default function OfferComponent({
   linkName,
 }: OfferDataProps): ReactElement {
   const i = index % 2 === 0;
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useScroll(containerRef); // ✅ Agora sim, animação será ativada!
+
   return (
-    <div className={`relative ${i ? "self-end" : "self-start"} h-fit w-3/5`}>
+    <div
+      ref={containerRef}
+      className={`relative ${i ? "self-end" : "self-start"} h-fit w-3/5`}
+    >
       <img
         className="w-full h-full object-cover"
         src={image}
-        alt={`Image ilustrativa para ${offerTitle} `}
+        alt={`Image ilustrativa para ${offerTitle}`}
       />
       <div
         className={`absolute inset-0 ${
           i ? "right-4/6" : "left-4/8"
-        } bg-esmerald/40 w-1/2 shadow-offer bg-opacity-50"`}
+        } bg-esmerald/40 w-1/2 shadow-offer bg-opacity-50`}
       />
       <div
         className={`absolute bottom-20 ${
