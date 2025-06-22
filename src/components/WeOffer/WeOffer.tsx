@@ -20,7 +20,7 @@ export default function WeOffer(): ReactElement {
           Learn about our travel management services for Corporate, Sports, Entertainment, Groups, Events and Leisure."
         />
       </div>
-      <div className="flex flex-col justify-evenly gap-y-35 ">
+      <div className="flex flex-col justify-evenly gap-y-30 ">
         {offerData.map((el) => (
           <OfferComponent
             index={el.index}

@@ -15,8 +15,8 @@ export default function ContactUs(): ReactElement {
         <div className="flex flex-col gap-y-10">
           <div className="">
             <TitleSectionColored
-              white={true}
-              title="ContactUs"
+              white={false}
+              title="Contact  Us"
               center={true}
               padding={true}
             />

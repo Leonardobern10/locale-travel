@@ -1,5 +1,5 @@
 export const readAboutData = {
-  title: "Read about the Locale Travel Technology.",
+  title: "Locale Travel Technology.",
   subtitle:
     "Multiple cloud based travel systems configured and combined to your requirements.",
   text1:

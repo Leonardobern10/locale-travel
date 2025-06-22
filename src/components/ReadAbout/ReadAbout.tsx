@@ -3,6 +3,7 @@ import TitleSectionColored from "../TitleSection";
 import Link from "../Link";
 import { readAboutData } from "@data/ReadAboutData";
 import Subtitle from "../Subtitle";
+import ParagraphValue from "../OurValue/ParagraphValue";
 
 export default function ReadAbout(): ReactElement {
   return (
@@ -22,9 +23,10 @@ export default function ReadAbout(): ReactElement {
             alt="Imagem de funcionários utilizando computador."
           />
         </div>
-        <div className="w-1/2 h-full flex flex-col gap-y-10 text-lg font-hunnin text-neutral-400">
-          <p>{readAboutData.text1}</p>
-          <p>{readAboutData.text2}</p>
+        <div className="w-1/2 h-full flex flex-col gap-y-10 text-lg font-hunnin">
+          <ParagraphValue
+            paragraphs={[readAboutData.text1, readAboutData.text2]}
+          />
           <Link linkName={readAboutData.buttonName} />
         </div>
       </div>
