@@ -6,7 +6,7 @@ export default function Input(props: {
 }): ReactElement {
   return (
     <input
-      className="w-full h-15 border border-white"
+      className="w-full h-13 border border-white/50 text-neutral-200 px-4 py-2 rounded-xl placeholder:text-neutral-600/50 focus:text-white focus:bg-white/50 focus:outline-none"
       type={props.email ? "email" : "text"}
       placeholder={props.placeholder}
     />
