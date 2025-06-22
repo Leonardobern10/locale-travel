@@ -5,7 +5,7 @@ import { doThisData } from "@data/DoThisData";
 
 export default function WeDo(): ReactElement {
   return (
-    <section className="w-screen bg-red-200 flex flex-col gap-y-20 items-center justify-between">
+    <section className="w-screen flex flex-col gap-y-20 items-center justify-between">
       <div className="text-center">
         <TitleSectionColored
           white={false}
@@ -18,7 +18,7 @@ export default function WeDo(): ReactElement {
           Entertainment, Groups, Events and Leisure.
         </p>
       </div>
-      <div className="grid grid-cols-3 grid-rows-2 w-5/6 h-fit place-content-center items-center gap-8">
+      <div className="grid grid-cols-3 grid-rows-2 w-5/6 h-fit place-content-center items-start gap-8">
         {doThisData.map((el) => (
           <DoThis
             key={el.id}

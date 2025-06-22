@@ -8,12 +8,12 @@ export default function DoThis({
 }: DoThisProps): ReactElement {
   const Icon = icon;
   return (
-    <article className="border-2 flex flex-col items-start justify-evenly gap-5 p-8">
-      <div className="w-10 h-10 border-2">
-        <Icon />
+    <article className="flex flex-col items-start justify-evenly gap-5 p-8 font-hunnin">
+      <div className="w-20 h-20 border-2 border-dashed rounded-br-4xl border-esmerald p-4">
+        <Icon className="text-esmerald w-full h-full" />
       </div>
-      <h5>{subtitle}</h5>
-      <p>{text}</p>
+      <h5 className="font-bold text-lg">{subtitle}</h5>
+      <p className="text-neutral-500">{text}</p>
     </article>
   );
 }
