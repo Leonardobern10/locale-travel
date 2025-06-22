@@ -6,14 +6,14 @@ import { doThisData } from "@data/DoThisData";
 export default function WeDo(): ReactElement {
   return (
     <section className="w-screen flex flex-col gap-y-20 items-center justify-between">
-      <div className="text-center">
+      <div className="flex flex-col items-center justify-between">
         <TitleSectionColored
           white={false}
           title="We Do"
           center={true}
           padding={true}
         />
-        <p>
+        <p className="text-neutral-500 text-lg border-2 w-3/4 text-center font-hunnin">
           Learn about our travel management services for Corporate, Sports,
           Entertainment, Groups, Events and Leisure.
         </p>
