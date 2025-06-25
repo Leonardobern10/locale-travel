@@ -4,29 +4,39 @@ import { useEffect, type RefObject } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const useScroll = (ref: RefObject<HTMLDivElement | null>) => {
+export const useScroll = (
+  ref: RefObject<HTMLDivElement | null>,
+  duration?: number,
+  x?: number,
+  y?: number
+) => {
   useEffect(() => {
     const element = ref.current;
 
     if (!element) return;
 
-    const animation = gsap.from(element, {
-      scrollTrigger: {
-        trigger: element,
-        start: "top 80%",
-        toggleActions: "play resume none none",
-        markers: true, // ← habilita debug visual
-      },
+    const ctx = gsap.context(() => {
+      const animation = gsap.from(element, {
+        x: x ? x : 0,
+        y: y ? y : 0,
+        opacity: 0,
+        duration: duration ? duration : 1,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: element,
+          start: "top+=20% 80%",
+          toggleActions: "play pause resume pause",
+          markers: true,
+          // scrub: true, // Removido para evitar comportamento travado
+        },
+      });
 
-      x: 200,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-    });
+      return () => {
+        animation.scrollTrigger?.kill();
+        animation.kill();
+      };
+    }, element); // garante isolamento do GSAP no elemento correto
 
-    return () => {
-      animation.scrollTrigger?.kill();
-      animation.kill();
-    };
+    return () => ctx.revert(); // limpa contexto ao desmontar
   }, [ref]);
 };

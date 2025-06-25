@@ -12,22 +12,24 @@ export default function OfferComponent({
   const i = index % 2 === 0;
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useScroll(containerRef); // ✅ Agora sim, animação será ativada!
+  useScroll(containerRef, 1, -200, 0);
 
   return (
     <div
       ref={containerRef}
-      className={`relative ${i ? "self-end" : "self-start"} h-fit w-3/5`}
+      className={`relative ${
+        i ? "self-end" : "self-start"
+      } w-3/5 min-h-[300px]`} // 🔧 garantia de altura visível
     >
       <img
         className="w-full h-full object-cover"
         src={image}
-        alt={`Image ilustrativa para ${offerTitle}`}
+        alt={`Imagem ilustrativa para ${offerTitle}`}
       />
       <div
         className={`absolute inset-0 ${
           i ? "right-4/6" : "left-4/8"
-        } bg-esmerald/40 w-1/2 shadow-offer bg-opacity-50`}
+        } bg-emerald-500/40 w-1/2 shadow-offer`}
       />
       <div
         className={`absolute bottom-20 ${
