@@ -5,31 +5,31 @@ import service3 from "@images/spend_smarter.png";
 import { BsBuildings } from "react-icons/bs";
 
 export const LocaleWayServiceData: LocalWayServiceProps = {
-  title: "The locale way",
+  title: "Nossa maneira",
   description:
-    "Learn about our travel management services for Corporate, Sports, Entertainment, Groups, Events and Leisure.",
+    "Transformamos cada viagem em uma experiência única, feita com propósito e paixão.",
   services: [
     {
       index: 0,
-      service: "Travel technology",
+      service: "Tecnologia de viagem",
       description:
-        "Travel asdasd as dasdasdasd sadsada sdasdas dasdas das das dasdasd asd asdasd as dsadasd a",
+        "Com sistemas inteligentes, automação e experiências personalizadas, conectamos você ao mundo com mais rapidez, segurança e conforto.",
       img: service1,
       icon: BsBuildings,
     },
     {
       index: 1,
-      service: "Concierge Travel Service",
+      service: "Serviço personalizado de viagens",
       description:
-        "Travel asdasd as dasdasdasd sadsada sdasdas dasdas das das dasdasd asd asdasd as dsadasd a",
+        "Cada viajante é único — e sua jornada também deve ser. Por isso, oferecemos um serviço totalmente personalizado, pensado nos seus interesses, preferências e estilo de vida.a",
       img: service2,
       icon: BsBuildings,
     },
     {
       index: 2,
-      service: "Spend smarter",
+      service: "Gaste melhor",
       description:
-        "Travel asdasd as dasdasdasd sadsada sdasdas dasdas das das dasdasd asd asdasd as dsadasd a",
+        "Viajar bem não precisa significar gastar mais. Com nossas ferramentas inteligentes e parcerias estratégicas, ajudamos você a maximizar seu orçamento, encontrando as melhores ofertas sem abrir mão da qualidade e do conforto.",
       img: service3,
       icon: BsBuildings,
     },
