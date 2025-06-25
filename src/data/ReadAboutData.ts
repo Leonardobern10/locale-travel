@@ -1,11 +1,11 @@
 export const readAboutData = {
-  title: "Locale Travel Technology.",
+  title: "Tecnologia Locale Travel",
   subtitle:
-    "Multiple cloud based travel systems configured and combined to your requirements.",
+    "Múltiplos sistemas de viagem baseados na nuvem, configurados e combinados de acordo com suas necessidades.",
   text1:
-    "Mi facilisi cras pharetra semper risus ac odio. Sit donec nunc libero nunc vel ipsum quam. Ac netus tincidunt elementum nam fringilla egestas etiam. Pharetra congue in dolor imperdiet. Lectus vivamus elementum elit venenatis sed. ",
+    "Nossa plataforma integra diversas soluções tecnológicas avançadas para otimizar a gestão das suas viagens, garantindo eficiência, segurança e uma experiência personalizada. Trabalhamos para conectar você aos melhores serviços do mercado, facilitando desde reservas até o acompanhamento em tempo real de seus itinerários.",
   text2:
-    "Proin quisque amet, elit tellus dictum nunc. Etiam id turpis tortor eu blandit. Duis consequat est nec consectetur. Semper bibendum ut ante nibh aliquam diam vitae enim pellentesque. Pretium, mi tortor, non ac et. Quis faucibus non auctor vel interdum sed. Ipsum elit rutrum ornare sapien.",
-  buttonName: "Read more",
+    "Estamos comprometidos em oferecer inovação constante, adaptando nossas ferramentas às demandas do seu negócio e proporcionando total controle e transparência em cada etapa da viagem.",
+  buttonName: "saiba mais",
   image: "src/assets/img/image_travel.png",
 };
