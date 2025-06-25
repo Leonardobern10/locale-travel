@@ -1,6 +1,6 @@
 export const bannerTitleData = {
-  title: "Locale Knowledge Global Reach",
+  title: "Conhecimento Local, Alcance Global",
   description:
     "Conectando horizontes, elevamos experiências a cada decolagem. Em cada voo, combinamos precisão, conforto e excelência — porque voar é mais do que se deslocar: é fazer parte de uma jornada que começa no céu, mas permanece na memória.",
-  buttonContent: "learn more",
+  buttonContent: "saiba mais",
 };
