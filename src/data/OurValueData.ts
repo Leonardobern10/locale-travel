@@ -5,26 +5,26 @@ import image2 from "../assets/img/image2.png";
 export const ourValueData: Array<OurValueComponentProps> = [
   {
     index: 0,
-    title: "Our Locale Story",
-    subtitle: "Well-crafted at every touchpoint",
+    title: "Nossa história",
+    subtitle: "Bem elaborada em cada ponto de contato",
     text1:
-      "Locale Travel is an independent, Australian owned and operated company. Our staff have project managed some of the most difficult travel and freight logistic tasks in Australia. As a company we are fully experienced in all areas of travel management.",
+      "Locale Travel é uma empresa independente, de propriedade e operação australiana. Nossa equipe já gerenciou projetos envolvendo algumas das tarefas mais complexas de logística de viagens e transporte na Austrália. Como empresa, temos ampla experiência em todas as áreas de gestão de viagens.",
     text2:
-      "From our innovative corporate travel solutions, to our expertise in strategic planning for Sporting organisations, LOCALE Travel creates one-of-a-kind experiences for our partners. Success to us means doing what it takes to earn your business every day through passion, innovation and a steadfast commitment to our customers’ needs.",
+      "Desde nossas soluções inovadoras para viagens corporativas até nossa expertise em planejamento estratégico para organizações esportivas, a Locale Travel cria experiências únicas para nossos parceiros. Para nós, sucesso significa fazer o que for preciso para conquistar o seu negócio todos os dias, por meio da paixão, inovação e um compromisso firme com as necessidades dos nossos clientes.",
     image: image1,
-    linkName: "see more",
+    linkName: "saiba mais",
     rightPosition: true,
   },
   {
     index: 1,
-    title: "Why Local Travel",
-    subtitle: "Well-crafted at every touchpoint",
+    title: "Por que nós?",
+    subtitle: "Sua melhor escolha em viagens personalizadas",
     text1:
-      "The combined experience across our board, management and employees runs into the HUNDREDS of years.  We have a great blend of aged, experience to youthful, energy.",
+      "A experiência combinada de nosso conselho, gestão e colaboradores soma CENTENAS de anos. Temos uma ótima combinação de experiência consolidada e energia jovem.",
     text2:
-      "The services you require we have done, are doing, and will continue to do.  We have all come together for the sole purpose of providing the BEST for YOU.  We know every client and organisation is different and special in their way. We love constructing solutions and programs that are suited to you.",
+      "Os serviços que você precisa, nós já fizemos, estamos fazendo e continuaremos fazendo. Estamos todos unidos com um único propósito: oferecer o MELHOR para VOCÊ. Sabemos que cada cliente e organização é diferente e especial à sua maneira. Adoramos criar soluções e programas personalizados que se adequem a você.",
     image: image2,
-    linkName: "see more",
+    linkName: "saiba mais",
     rightPosition: false,
   },
 ];
