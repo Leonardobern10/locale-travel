@@ -4,7 +4,7 @@ import ButtonDefault from "../ButtonDefault";
 import image from "@images/image_cel.png";
 import Input from "./Input";
 import Subtitle from "../Subtitle";
-import { placeholders, titlesText } from "@data/ContaactUsData";
+import { placeholders, titlesText } from "@data/ContactUsData";
 
 export default function ContactUs(): ReactElement {
   return (
@@ -36,7 +36,7 @@ export default function ContactUs(): ReactElement {
               placeholder={placeholders.messagePlaceholder}
             />
             <ButtonDefault
-              buttonName="Submit"
+              buttonName="Enviar"
               onClick={() => console.log("Ola")}
               black={false}
             />
