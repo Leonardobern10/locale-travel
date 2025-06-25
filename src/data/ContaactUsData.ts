@@ -7,8 +7,8 @@ export const titlesText: SectionTextType = {
 };
 
 export const placeholders: ContactPlaceholdersType = {
-  namePlaceholder: "Full name",
+  namePlaceholder: "Nome completo",
   emailPlaceholder: "E-mail",
-  subjectPlaceholder: "Subject",
-  messagePlaceholder: "Message",
+  subjectPlaceholder: "Assunto",
+  messagePlaceholder: "Mensagem",
 };
