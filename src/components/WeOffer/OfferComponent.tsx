@@ -36,7 +36,9 @@ export default function OfferComponent({
           i ? "left-20" : "right-20"
         } flex flex-col gap-y-4`}
       >
-        <h4 className="text-4xl text-white">{offerTitle}</h4>
+        <h4 className="text-5xl text-white font-chonburi font-bold">
+          {offerTitle}
+        </h4>
         <ButtonDefault
           black={false}
           buttonName={linkName}

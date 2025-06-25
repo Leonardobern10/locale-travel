@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Huninn&family=Ranchers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&family=Huninn&family=Plaster&family=Ranchers&display=swap");
 @import "tailwindcss";
 
 @theme {
+  --font-chonburi: "Chonburi", serif;
+  --font-plaster: "Plaster", system-ui;
   --font-hunnin: "Huninn", sans-serif;
   --font-ranchers: "Ranchers", sans-serif;
   --color-esmerald: #3abcb6;

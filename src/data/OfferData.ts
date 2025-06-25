@@ -4,8 +4,7 @@ import offer2 from "../assets/img/offer_2.png";
 import offer3 from "../assets/img/offer_3.png";
 import offer4 from "../assets/img/offer_4.png";
 import offer5 from "../assets/img/offer_5.png";
-import offer6 from "../assets/img/offer_6.png";
-import offer7 from "../assets/img/offer_7.png";
+import offer7 from "../assets/img/offer_6.png";
 import type { OfferTextsType } from "../types/OfferTextsType";
 
 export const offerTexts: OfferTextsType = {
