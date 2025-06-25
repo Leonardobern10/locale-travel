@@ -10,14 +10,13 @@ export default function WeDo(): ReactElement {
       <div className="flex flex-col items-center justify-between">
         <TitleSectionColored
           white={false}
-          title="What We Do"
+          title="O que fazemos?"
           center={true}
           padding={true}
         />
         <Subtitle
           white={false}
-          title="Learn about our travel management services for Corporate, Sports,
-          Entertainment, Groups, Events and Leisure."
+          title="Serviços que atendem com excelência a qualquer necessidade."
         />
       </div>
       <div className="grid grid-cols-3 grid-rows-2 w-5/6 h-fit place-content-center items-start gap-8">
