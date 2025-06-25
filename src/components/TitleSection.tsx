@@ -5,6 +5,7 @@ export default function TitleSectionColored(props: {
   padding: boolean;
   center?: boolean;
   white?: boolean;
+  midColor?: boolean;
 }): ReactElement {
   let string = props.title.split(" ");
   return (
@@ -16,7 +17,10 @@ export default function TitleSectionColored(props: {
       } tracking-normal h-fit`}
     >
       {string[0]}
-      <span className="text-esmerald px-1"> {string[1]} </span>
+      <span className={`${props.midColor ? "text-esmerald" : ""} px-1`}>
+        {" "}
+        {string[1]}{" "}
+      </span>
       {string[2]}
     </h2>
   );

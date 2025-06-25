@@ -1,4 +1,4 @@
-export type OfferTextsType = {
+export type SectionTextType = {
   title: string;
   subtitle: string;
 };

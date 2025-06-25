@@ -5,9 +5,9 @@ import offer3 from "../assets/img/offer_3.png";
 import offer4 from "../assets/img/offer_4.png";
 import offer5 from "../assets/img/offer_5.png";
 import offer7 from "../assets/img/offer_6.png";
-import type { OfferTextsType } from "../types/OfferTextsType";
+import type { SectionTextType } from "../types/SectionTextType";
 
-export const offerTexts: OfferTextsType = {
+export const offerTexts: SectionTextType = {
   title: "O que oferecemos?",
   subtitle: "Conectando você aos melhores destinos e serviços.",
 };
