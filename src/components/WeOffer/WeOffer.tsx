@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import TitleSectionColored from "../TitleSection";
-import { offerData } from "@data/OfferData";
+import { offerData, offerTexts } from "@data/OfferData";
 import OfferComponent from "./OfferComponent";
 import Subtitle from "../Subtitle";
 
@@ -11,14 +11,10 @@ export default function WeOffer(): ReactElement {
         <TitleSectionColored
           white={true}
           center={true}
-          title="What we offer"
+          title={offerTexts.title}
           padding={true}
         />
-        <Subtitle
-          white={true}
-          title="
-          Learn about our travel management services for Corporate, Sports, Entertainment, Groups, Events and Leisure."
-        />
+        <Subtitle white={true} title={offerTexts.subtitle} />
       </div>
       <div className="flex flex-col justify-evenly gap-y-30 ">
         {offerData.map((el) => (

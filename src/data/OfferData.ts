@@ -6,48 +6,48 @@ import offer4 from "../assets/img/offer_4.png";
 import offer5 from "../assets/img/offer_5.png";
 import offer6 from "../assets/img/offer_6.png";
 import offer7 from "../assets/img/offer_7.png";
+import type { OfferTextsType } from "../types/OfferTextsType";
+
+export const offerTexts: OfferTextsType = {
+  title: "O que oferecemos?",
+  subtitle: "Conectando você aos melhores destinos e serviços.",
+};
 
 export const offerData: Array<OfferDataProps> = [
   {
     index: 0,
     image: offer1,
-    offerTitle: "Business Travel",
-    linkName: "Corporate Travel Management",
+    offerTitle: "Viagem de negócios",
+    linkName: "Gestão de viagens corporativas",
   },
   {
     index: 1,
     image: offer2,
-    offerTitle: "Leisure",
-    linkName: "Leisure Travel Experiences",
+    offerTitle: "Lazer",
+    linkName: "Vivências em viagens de lazer",
   },
   {
     index: 2,
     image: offer3,
-    offerTitle: "Sports",
-    linkName: "Sports Travel Management",
+    offerTitle: "Esportes",
+    linkName: "Gestão de viagens esportivas",
   },
   {
     index: 3,
     image: offer4,
-    offerTitle: "Business Travel",
-    linkName: "Corporate Travel Management",
+    offerTitle: "Entretenimento",
+    linkName: "Viagens para entretenimento",
   },
   {
     index: 4,
     image: offer5,
-    offerTitle: "Entertainment",
-    linkName: "Entertainment Travel Management",
+    offerTitle: "Exclusivo",
+    linkName: "Gestão de viagens para eventos",
   },
   {
     index: 5,
-    image: offer6,
-    offerTitle: "Unique",
-    linkName: "Unique Travel Management",
-  },
-  {
-    index: 6,
     image: offer7,
-    offerTitle: "Online Booking Tools",
-    linkName: "Corporate Travel Solutions",
+    offerTitle: "Online",
+    linkName: "Plataformas de agendamento online",
   },
 ];
