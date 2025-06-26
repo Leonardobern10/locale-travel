@@ -3,6 +3,7 @@ import image from "@images/logo_blue.svg";
 import { footerData, footerIcons, textCopyright } from "@data/FooterData";
 import FooterIcon from "./FooterIcon";
 import FooterInfo from "./FooterInfo";
+import SpotlightCard from "src/ui/SpotlightCard/SpotlightCard";
 
 export default function Footer(): ReactElement {
   return (
@@ -21,7 +22,9 @@ export default function Footer(): ReactElement {
       </div>
       <div className="flex flex-row items-center justify-evenly gap-x-5">
         {footerIcons.map((el) => (
-          <FooterIcon key={el.index} icon={el.icon} />
+          <SpotlightCard
+            children={<FooterIcon key={el.index} icon={el.icon} />}
+          />
         ))}
       </div>
       <p className="text-neutral-400">{textCopyright}</p>
