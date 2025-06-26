@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import image from "@images/logo_blue.svg";
-import { footerData, footerIcons } from "@data/FooterData";
+import { footerData, footerIcons, textCopyright } from "@data/FooterData";
 import FooterIcon from "./FooterIcon";
 import FooterInfo from "./FooterInfo";
 
@@ -24,10 +24,7 @@ export default function Footer(): ReactElement {
           <FooterIcon key={el.index} icon={el.icon} />
         ))}
       </div>
-      <p className="text-neutral-400">
-        {" "}
-        Copyright © 2022 Locale Travel. All rights reserved.
-      </p>
+      <p className="text-neutral-400">{textCopyright}</p>
     </footer>
   );
 }

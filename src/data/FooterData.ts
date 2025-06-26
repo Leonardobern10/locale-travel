@@ -7,16 +7,19 @@ import { FaSquareBehance } from "react-icons/fa6";
 export const footerData = [
   {
     index: 0,
-    title: "Head Office",
+    title: "Escritório",
     text: "Suite 5, Level 2, 2 Grosvenor St, Bondi Junction NSW 2022",
   },
-  { index: 1, title: "Email contact", text: "hello@localetravel.com.au" },
+  { index: 1, title: "E-mail de contato", text: "hello@localetravel.com.au" },
   {
     index: 2,
-    title: "Contact",
-    text: "+1300 811 033 \n+61 7 3059 6130  (from outside Australia)",
+    title: "Contato",
+    text: "+1300 811 033 \n",
   },
 ];
+
+export const textCopyright: string =
+  "        Copyright © 2022 Locale Travel. All rights reserved.";
 
 export const footerIcons = [
   { index: 0, icon: FaFacebookSquare },
