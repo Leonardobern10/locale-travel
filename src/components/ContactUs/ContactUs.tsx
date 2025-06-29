@@ -21,6 +21,17 @@ export default function ContactUs(): ReactElement {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  function isFormValid() {
+    return (
+      fields.name &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email) &&
+      fields.subject &&
+      fields.message
+    );
+  }
+
   function validateFields() {
     const newErrors = {
       name: fields.name ? "" : "Nome é obrigatório.",
@@ -46,16 +57,21 @@ export default function ContactUs(): ReactElement {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    setIsSubmitting(true);
     if (validateFields()) {
-      console.log("Formulário enviado com sucesso:", fields);
-      // Aqui você pode adicionar a lógica para enviar os dados do formulário
-      setFields({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
+      // Simule envio assíncrono
+      setTimeout(() => {
+        console.log("Formulário enviado com sucesso:", fields);
+        setFields({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        setIsSubmitting(false);
+      }, 1000);
     } else {
+      setIsSubmitting(false);
       console.log("Erro ao enviar o formulário:", errors);
     }
   }
@@ -91,6 +107,7 @@ export default function ContactUs(): ReactElement {
                 placeholder={placeholders.namePlaceholder}
                 email={false}
                 onChange={handleChange}
+                value={fields.name}
               />
               {errors.name && (
                 <span className="text-red-400 text-xs">{errors.name}</span>
@@ -106,6 +123,7 @@ export default function ContactUs(): ReactElement {
                 placeholder={placeholders.emailPlaceholder}
                 email={true}
                 onChange={handleChange}
+                value={fields.email}
               />
               {errors.email && (
                 <span className="text-red-400 text-xs">{errors.email}</span>
@@ -121,6 +139,7 @@ export default function ContactUs(): ReactElement {
                 placeholder={placeholders.subjectPlaceholder}
                 email={false}
                 onChange={handleChange}
+                value={fields.subject}
               />
               {errors.subject && (
                 <span className="text-red-400 text-xs">{errors.subject}</span>
@@ -136,12 +155,18 @@ export default function ContactUs(): ReactElement {
                 className="w-full h-50 border border-white/50 text-neutral-200 px-4 py-2 rounded-xl placeholder:text-neutral-600/50 focus:text-white focus:bg-white/50 focus:outline-none"
                 placeholder={placeholders.messagePlaceholder}
                 onChange={handleChange}
+                value={fields.message}
               />
               {errors.message && (
                 <span className="text-red-400 text-xs">{errors.message}</span>
               )}
             </div>
-            <ButtonDefault buttonName="Enviar" black={false} type="submit" />
+            <ButtonDefault
+              disabled={!isFormValid() || isSubmitting}
+              buttonName="Enviar"
+              black={false}
+              type="submit"
+            />
           </form>
         </div>
       </div>

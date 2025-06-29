@@ -4,6 +4,7 @@ export default function Input(props: {
   email: boolean;
   placeholder: string;
   id: string;
+  value?: string;
   onChange?: (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
