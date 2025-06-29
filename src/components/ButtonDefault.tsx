@@ -10,7 +10,7 @@ export default function ButtonDefault({
 }: ButtonDefaultProps): ReactElement {
   const handleClick = (e: MouseEvent) => {
     e.stopPropagation();
-    onClick(e);
+    if (onClick) onClick(e);
   };
 
   return (
