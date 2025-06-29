@@ -12,12 +12,14 @@ export default function Header(): ReactElement {
   return (
     <header
       ref={headerRef}
-      className="padding-h-content w-full h-20 py-1 flex flex-row items-center justify-between"
+      className="padding-h-content w-full h-16 md:h-20 py-1 flex flex-col md:flex-row items-center justify-between gap-y-2 md:gap-y-0"
     >
-      <div className="w-25 h-15">
-        <img src={logo} alt="Logo" className="w-full h-full" />
+      <div className="w-28 h-12 md:w-25 md:h-15 flex-shrink-0 flex items-center justify-center">
+        <img src={logo} alt="Logo" className="w-full h-full object-contain" />
       </div>
-      <NavBar items={items} />
+      <div className="w-full md:w-auto flex justify-center md:justify-end">
+        <NavBar items={items} />
+      </div>
     </header>
   );
 }

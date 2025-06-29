@@ -26,7 +26,6 @@ export const useScroll = (
           trigger: element,
           start: "top+=20% 80%",
           toggleActions: "play pause resume pause",
-          markers: true,
           // scrub: true, // Removido para evitar comportamento travado
         },
       });

@@ -14,10 +14,12 @@ export default function Banner({
   return (
     <div
       ref={bannerRef}
-      className="padding-h-content w-1/2 h-4/7 flex flex-col items-start justify-between"
+      className="padding-h-content w-full md:w-1/2 h-auto md:h-4/7 flex flex-col items-start justify-between gap-y-4"
     >
       <BannerTitle title={bannerTitle} />
-      <p className="text-white w-5/6 font-hunnin text-sm">{description}</p>
+      <p className="text-white w-full md:w-5/6 font-hunnin text-sm">
+        {description}
+      </p>
       <Link linkName={buttonContent} />
     </div>
   );
