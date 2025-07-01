@@ -7,7 +7,7 @@ export default function Divisor(): ReactElement {
   const { text, icon, buttonText } = divisorData;
   const Icon = icon;
   return (
-    <div className="w-screen h-fit md:h-20 flex flex-col md:flex-row items-center justify-center gap-y-5 md:gap-x-8 py-8 bg-esmerald font-hunnin text-sm md:text-xl md:tracking-wide text-white">
+    <div className="w-screen h-fit md:h-20 flex flex-col md:flex-row items-center justify-center gap-y-5 md:gap-x-8 py-4 md:py-8 bg-esmerald font-hunnin text-sm md:text-xl md:tracking-wide text-white">
       <p>{text}</p>
       {useWidth() > 575 && (
         <div>
