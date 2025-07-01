@@ -17,7 +17,7 @@ export default function LocaleWay(): ReactElement {
         />
         <Subtitle white={false} title={LocaleWayServiceData.description} />
       </div>
-      <div className="md:padding-h-content h-fit md:h-130 w-full flex flex-col md:flex-row items-center justify-between gap-x-4">
+      <div className="padding-h-content h-fit md:h-130 w-full flex flex-col md:flex-row items-center justify-between gap-x-4">
         {useWidth() > 575
           ? LocaleWayServiceData.services.map((el) => (
               <TiltedCard

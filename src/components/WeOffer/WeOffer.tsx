@@ -6,7 +6,7 @@ import Subtitle from "../Subtitle";
 
 export default function WeOffer(): ReactElement {
   return (
-    <section className="h-fit w-full bg-neutral-800 flex flex-col justify-between gap-y-20 font-hunnin padding-v-content">
+    <section className="h-fit w-full bg-neutral-800 flex flex-col justify-between gap-y-20 font-hunnin py-10 padding-v-content">
       <div className="flex flex-col items-center text-neutral-400 font-bold w-full self-center">
         <TitleSectionColored
           white={true}

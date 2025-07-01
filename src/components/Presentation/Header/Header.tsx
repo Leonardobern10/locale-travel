@@ -11,9 +11,9 @@ export default function Header(): ReactElement {
   return (
     <header
       ref={headerRef}
-      className="md:padding-h-content w-full h-16 md:h-20 px-4 py-1 flex flex-row items-center justify-between gap-y-2 "
+      className="md:padding-h-content w-full h-16 md:h-20 px-10 py-1 flex flex-row items-center justify-between gap-y-2 "
     >
-      <div className="w-28 h-12 md:w-fit md:h-15 flex-shrink-0 flex items-center justify-center">
+      <div className="w-28 h-12 md:w-fit md:h-10 flex-shrink-0 flex items-center justify-center">
         <img src={logo} alt="Logo" className="w-full h-full object-contain" />
       </div>
       <div className="w-fit md:w-full flex justify-center md:justify-end">
