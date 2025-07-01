@@ -9,7 +9,7 @@ export default function Presentation(): ReactElement {
   const content = bannerTitleData;
   return (
     <div
-      className="w-screen h-full md:h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center"
+      className="w-screen h-dvh md:h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center"
       style={{ backgroundImage: `url(${imageMain})` }}
     >
       <Header />
