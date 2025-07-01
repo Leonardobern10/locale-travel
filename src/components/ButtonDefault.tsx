@@ -24,7 +24,7 @@ export default function ButtonDefault({
         black
           ? "bg-black-default text-white"
           : "bg-white text-esmerald border-2 border-esmerald"
-      } w-fit h-12 text-lg py-2 px-7 font-hunnin rounded-4xl hover:cursor-pointer hover:scale-95
+      } w-fit h-9 md:h-12 text-sm md:text-lg py-2 px-4 md:px-7 font-hunnin rounded-4xl hover:cursor-pointer hover:scale-95
         ${disabled ? "opacity-50 cursor-not-allowed hover:scale-100" : ""}
       `}
     >
