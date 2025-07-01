@@ -4,6 +4,8 @@ import TitleSectionColored from "../TitleSection";
 import { LocaleWayServiceData } from "@data/LocalWayServiceData";
 import TiltedCard from "../../ui/TiltedCard/TiltedCard";
 import Subtitle from "../Subtitle";
+import useWidth from "src/hooks/useWidth";
+import ManagementTravelServiceMobile from "./ManagementTravelServiceMobile";
 
 export default function LocaleWay(): ReactElement {
   return (
@@ -15,28 +17,38 @@ export default function LocaleWay(): ReactElement {
         />
         <Subtitle white={false} title={LocaleWayServiceData.description} />
       </div>
-      <div className="padding-h-content h-130 w-full flex flex-row items-center justify-between gap-x-4">
-        {LocaleWayServiceData.services.map((el) => (
-          <TiltedCard
-            padding="0"
-            key={el.index}
-            captionText={el.service}
-            altText={`Card for service ${el.service}`}
-            containerHeight="500px"
-            containerWidth="100%"
-            contentHeight="100%"
-            contentWidth="100%"
-            content={
-              <ManagementTravelService
+      <div className="md:padding-h-content h-fit md:h-130 w-full flex flex-col md:flex-row items-center justify-between gap-x-4">
+        {useWidth() > 575
+          ? LocaleWayServiceData.services.map((el) => (
+              <TiltedCard
+                padding="0"
+                key={el.index}
+                captionText={el.service}
+                altText={`Card for service ${el.service}`}
+                containerHeight="500px"
+                containerWidth="100%"
+                contentHeight="100%"
+                contentWidth="100%"
+                content={
+                  <ManagementTravelService
+                    index={el.index}
+                    img={el.img}
+                    icon={el.icon}
+                    service={el.service}
+                    description={el.description}
+                  />
+                }
+              />
+            ))
+          : LocaleWayServiceData.services.map((el) => (
+              <ManagementTravelServiceMobile
                 index={el.index}
                 img={el.img}
                 icon={el.icon}
                 service={el.service}
                 description={el.description}
               />
-            }
-          />
-        ))}
+            ))}
       </div>
     </section>
   );
