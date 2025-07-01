@@ -14,10 +14,10 @@ export default function Banner({
   return (
     <div
       ref={bannerRef}
-      className="p-10 md:padding-h-content w-full md:w-1/2 h-auto md:h-4/7 flex flex-col items-center md:items-start justify-between gap-y-4 md:gap-y-8"
+      className="p-6 md:padding-h-content w-full md:w-1/2 h-auto md:h-4/7 flex flex-col items-center md:items-start justify-center md:justify-between gap-y-4 md:gap-y-8"
     >
       <BannerTitle title={bannerTitle} />
-      <p className="text-white w-full md:w-full font-hunnin md:text-md text-lg">
+      <p className="text-white w-full md:w-full font-hunnin text-md md:text-lg">
         {description}
       </p>
       <Link linkName={buttonContent} />
