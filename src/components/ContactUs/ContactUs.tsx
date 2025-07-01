@@ -5,6 +5,7 @@ import image from "@images/image_cel.png";
 import Input from "./Input";
 import Subtitle from "../Subtitle";
 import { placeholders, titlesText } from "@data/ContactUsData";
+import useWidth from "src/hooks/useWidth";
 
 export default function ContactUs(): ReactElement {
   const [fields, setFields] = useState({
@@ -78,14 +79,16 @@ export default function ContactUs(): ReactElement {
 
   return (
     <section className="w-screen h-5/6 flex flex-row font-hunnin">
-      <div className="w-1/2">
-        <img
-          className="w-full h-full"
-          src={image}
-          alt="imagem de uma mão segurando um celular"
-        />
-      </div>
-      <div className="w-1/2 padding-h-content bg-esmerald">
+      {useWidth() > 575 && (
+        <div className="md:w-1/2">
+          <img
+            className="w-full h-full"
+            src={image}
+            alt="imagem de uma mão segurando um celular"
+          />
+        </div>
+      )}
+      <div className="w-full md:w-1/2 p-4 padding-h-content bg-esmerald">
         <div className="flex flex-col gap-y-10">
           <div className="">
             <TitleSectionColored

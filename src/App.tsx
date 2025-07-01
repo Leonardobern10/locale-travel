@@ -18,8 +18,8 @@ function App() {
       <WeOffer />
       <WeDo />
       <ReadAbout />
-      {/*
       <ContactUs />
+      {/*
       <Invite />
       <Footer />
       */}
