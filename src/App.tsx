@@ -15,10 +15,10 @@ function App() {
       <Presentation />
       <LocaleWay />
       <OurValues />
-      {/*
       <WeOffer />
       <WeDo />
       <ReadAbout />
+      {/*
       <ContactUs />
       <Invite />
       <Footer />
