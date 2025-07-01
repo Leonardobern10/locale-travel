@@ -19,7 +19,7 @@ export default function WeDo(): ReactElement {
           title="Serviços que atendem com excelência a qualquer necessidade."
         />
       </div>
-      <div className="grid grid-cols-3 grid-rows-2 w-5/6 h-fit place-content-center items-start gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:w-5/6 h-fit place-content-center items-start gap-8">
         {doThisData.map((el) => (
           <DoThis
             key={el.id}
