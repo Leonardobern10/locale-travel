@@ -17,7 +17,7 @@ export default function ReadAbout(): ReactElement {
         <Subtitle white={false} title={readAboutData.subtitle} />
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between gap-x-20">
-        <div className=" w-full md:w-1/2 h-full">
+        <div className="w-full md:w-1/2 h-full">
           <img
             src={readAboutData.image}
             alt="Imagem de funcionários utilizando computador."

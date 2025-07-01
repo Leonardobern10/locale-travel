@@ -14,7 +14,7 @@ export default function Banner({
   return (
     <div
       ref={bannerRef}
-      className="p-4 md:padding-h-content w-full md:w-1/2 h-auto md:h-4/7 flex flex-col items-center md:items-start justify-between gap-y-4"
+      className="p-10 md:padding-h-content w-full md:w-1/2 h-auto md:h-4/7 flex flex-col items-center md:items-start justify-between gap-y-4"
     >
       <BannerTitle title={bannerTitle} />
       <p className="text-white w-full md:w-full font-hunnin text-sm">
