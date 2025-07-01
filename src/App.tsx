@@ -21,8 +21,6 @@ function App() {
       <ContactUs />
       <Invite />
       <Footer />
-      {/*
-       */}
     </div>
   );
 }
