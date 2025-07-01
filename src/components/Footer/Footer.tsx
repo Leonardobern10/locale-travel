@@ -4,6 +4,7 @@ import { footerData, footerIcons, textCopyright } from "@data/FooterData";
 import FooterIcon from "./FooterIcon";
 import FooterInfo from "./FooterInfo";
 import SpotlightCard from "src/ui/SpotlightCard/SpotlightCard";
+import useWidth from "src/hooks/useWidth";
 
 export default function Footer(): ReactElement {
   return (
@@ -15,19 +16,25 @@ export default function Footer(): ReactElement {
           alt="Logo da empresa em cor AZUL."
         />
       </div>
-      <div className="flex flex-row justify-evenly gap-x-5">
+      <div className="flex flex-col md:flex-row items-center justify-evenly gap-y-5 gap-x-5">
         {footerData.map((el) => (
           <FooterInfo title={el.title} content={[el.text]} key={el.index} />
         ))}
       </div>
-      <div className="flex flex-row items-center justify-evenly gap-x-5">
-        {footerIcons.map((el) => (
-          <SpotlightCard
-            children={<FooterIcon key={el.index} icon={el.icon} />}
-          />
-        ))}
+      <div className="w-5/6 md:w-full flex flex-row items-center justify-evenly gap-x-5">
+        {useWidth() > 575
+          ? footerIcons.map((el) => (
+              <SpotlightCard
+                children={<FooterIcon key={el.index} icon={el.icon} />}
+              />
+            ))
+          : footerIcons.map((el) => (
+              <FooterIcon key={el.index} icon={el.icon} />
+            ))}
       </div>
-      <p className="text-neutral-400">{textCopyright}</p>
+      <p className="w-5/6 md:w-full text-sm md:text-lg text-neutral-400 text-center">
+        {textCopyright}
+      </p>
     </footer>
   );
 }

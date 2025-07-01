@@ -19,10 +19,10 @@ function App() {
       <WeDo />
       <ReadAbout />
       <ContactUs />
-      {/*
       <Invite />
       <Footer />
-      */}
+      {/*
+       */}
     </div>
   );
 }
