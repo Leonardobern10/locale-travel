@@ -6,7 +6,7 @@ import Subtitle from "../Subtitle";
 
 export default function WeDo(): ReactElement {
   return (
-    <section className="bg-linear-to-b from-white from-80% to-esmerald/20 to-100% w-screen flex flex-col gap-y-20 items-center justify-between padding-v-content">
+    <section className="bg-linear-to-b from-white from-80% to-esmerald/20 to-100% w-screen flex flex-col gap-y-10 md:gap-y-20 items-center justify-between padding-v-content">
       <div className="flex flex-col items-center justify-between">
         <TitleSectionColored
           white={false}
@@ -19,7 +19,7 @@ export default function WeDo(): ReactElement {
           title="Serviços que atendem com excelência a qualquer necessidade."
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:w-5/6 h-fit place-content-center items-start gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:w-5/6 h-fit place-content-center items-start gap-4 md:gap-8">
         {doThisData.map((el) => (
           <DoThis
             key={el.id}
