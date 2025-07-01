@@ -9,7 +9,7 @@ import ManagementTravelServiceMobile from "./ManagementTravelServiceMobile";
 
 export default function LocaleWay(): ReactElement {
   return (
-    <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 padding-v-content font-hunnin bg-linear-to-t from-0% from-esmerald/70 to-40% to-white-default">
+    <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 padding-v-content font-hunnin md:bg-linear-to-t md:from-0% md:from-esmerald/70 md:to-40% md:to-white-default">
       <div className="flex flex-col items-center justify-between h-fit">
         <TitleSectionColored
           padding={true}
