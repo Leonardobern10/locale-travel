@@ -15,7 +15,7 @@ export default function OurValueComponent({
     <article
       className={`w-full h-full flex flex-col ${
         rightPosition ? "md:flex-row-reverse" : "md:flex-row"
-      } items-center justify-between `}
+      } items-center justify-between`}
     >
       <div className="w-full md:w-1/2 h-full">
         <img className="w-full h-full" src={image} alt="Image for our values" />

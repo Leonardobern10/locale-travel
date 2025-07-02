@@ -7,7 +7,7 @@ import ParagraphValue from "../OurValue/ParagraphValue";
 
 export default function ReadAbout(): ReactElement {
   return (
-    <section className="w-screen flex flex-col items-center justify-between gap-y-20 py-10 padding-h-content">
+    <section className="h-full w-screen flex flex-col items-center justify-between gap-y-20 py-10 padding-h-content padding-v-mobile">
       <div className="flex flex-col items-center md:items-start md:self-start justify-between w-full gap-y-5">
         <TitleSectionColored
           title={readAboutData.title}

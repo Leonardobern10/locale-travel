@@ -6,7 +6,7 @@ import Subtitle from "../Subtitle";
 
 export default function WeDo(): ReactElement {
   return (
-    <section className="bg-linear-to-b from-white from-80% to-esmerald/20 to-100% w-screen flex flex-col gap-y-10 md:gap-y-20 items-center justify-between padding-v-content">
+    <section className="bg-linear-to-b from-white from-80% to-esmerald/20 to-100% w-screen flex flex-col gap-y-10 md:gap-y-20 items-center justify-between padding-v-content padding-v-mobile max-md:pt-8">
       <div className="flex flex-col items-center justify-between">
         <TitleSectionColored
           white={false}
