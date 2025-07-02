@@ -18,3 +18,9 @@
 .padding-v-content {
   @apply md:py-20;
 }
+.padding-v-mobile {
+  @apply py-10;
+}
+.padding-h-mobile {
+  @apply px-10;
+}
