@@ -10,7 +10,7 @@ export default function TitleSectionColored(props: {
   let string = props.title.split(" ");
   return (
     <h2
-      className={`text-2xl md:text-4xl font-ranchers ${
+      className={`text-2xl md:text-4xl max-md:text-center font-ranchers ${
         props.white ? "text-white-default" : "text-neutral-700"
       } md:pt-10 ${props.padding ? "p-4" : "p-0"} ${
         props.center && "self-center"

@@ -89,7 +89,7 @@ export default function ContactUs(): ReactElement {
         </div>
       )}
       <div className="w-full md:w-1/2 p-4 padding-h-content bg-esmerald">
-        <div className="flex flex-col gap-y-10">
+        <div className="flex flex-col gap-y-10 items-center">
           <div className="">
             <TitleSectionColored
               white={true}
@@ -100,7 +100,10 @@ export default function ContactUs(): ReactElement {
             />
             <Subtitle white={true} title={titlesText.subtitle} />
           </div>
-          <form className="flex flex-col gap-y-4 pb-4" onSubmit={handleSubmit}>
+          <form
+            className="flex w-full flex-col gap-y-4 pb-4"
+            onSubmit={handleSubmit}
+          >
             <div className="flex flex-col gap-y-2">
               <label htmlFor="name" className="text-neutral-200">
                 Nome
