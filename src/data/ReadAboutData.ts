@@ -1,3 +1,5 @@
+import image from "@images/image_travel.png";
+
 export const readAboutData = {
   title: "Tecnologia Locale Travel",
   subtitle:
@@ -7,5 +9,5 @@ export const readAboutData = {
   text2:
     "Estamos comprometidos em oferecer inovação constante, adaptando nossas ferramentas às demandas do seu negócio e proporcionando total controle e transparência em cada etapa da viagem.",
   buttonName: "saiba mais",
-  image: "src/assets/img/image_travel.png",
+  image: image,
 };
