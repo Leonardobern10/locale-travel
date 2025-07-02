@@ -1,5 +1,6 @@
 import type { DoThisProps } from "src/types/DoThisProps";
 import type { ReactElement } from "react";
+import TextDefault from "../TextDefault";
 
 export default function DoThis({
   icon,
@@ -13,7 +14,7 @@ export default function DoThis({
         <Icon className="text-esmerald w-full h-full" />
       </div>
       <h5 className="font-bold text-lg">{subtitle}</h5>
-      <p className="text-neutral-500">{text}</p>
+      <TextDefault text={text} />
     </article>
   );
 }
