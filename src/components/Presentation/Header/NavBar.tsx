@@ -20,8 +20,8 @@ export default function NavBar({ items }: NavBarProps): ReactElement {
         </ul>
       )}
       <div className="flex flex-row items-center justify-between gap-x-3">
-        {iconsButton.map((el) => (
-          <ButtonHeader icon={el} />
+        {iconsButton.map((el, index) => (
+          <ButtonHeader icon={el} key={index} />
         ))}
       </div>
     </nav>

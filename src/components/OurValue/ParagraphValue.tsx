@@ -5,8 +5,8 @@ export default function ParagraphValue(props: {
 }): ReactElement {
   return (
     <div className="flex flex-col gap-y-5 tracking-wide">
-      {props.paragraphs.map((el) => (
-        <p>{el}</p>
+      {props.paragraphs.map((el, index) => (
+        <p key={index}>{el}</p>
       ))}
     </div>
   );

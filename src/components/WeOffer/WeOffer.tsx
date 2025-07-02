@@ -19,6 +19,7 @@ export default function WeOffer(): ReactElement {
       <div className="flex flex-col justify-evenly gap-y-30 ">
         {offerData.map((el) => (
           <OfferComponent
+            key={el.index}
             index={el.index}
             image={el.image}
             offerTitle={el.offerTitle}

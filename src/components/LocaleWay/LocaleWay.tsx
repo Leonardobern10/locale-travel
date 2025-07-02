@@ -32,6 +32,7 @@ export default function LocaleWay(): ReactElement {
                 content={
                   <ManagementTravelService
                     index={el.index}
+                    key={el.index}
                     img={el.img}
                     icon={el.icon}
                     service={el.service}
@@ -43,6 +44,7 @@ export default function LocaleWay(): ReactElement {
           : LocaleWayServiceData.services.map((el) => (
               <ManagementTravelServiceMobile
                 index={el.index}
+                key={el.index}
                 img={el.img}
                 icon={el.icon}
                 service={el.service}
