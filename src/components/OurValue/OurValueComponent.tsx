@@ -20,7 +20,7 @@ export default function OurValueComponent({
       <div className="w-full md:w-1/2 h-full">
         <img className="w-full h-full" src={image} alt="Image for our values" />
       </div>
-      <div className="w-5/6 md:w-1/2 h-full padding-h-content py-8 md:py-0 flex flex-col items-center justify-center">
+      <div className="w-5/6 md:w-1/2 h-full padding-h-content padding-v-mobile md:py-0 flex flex-col items-center justify-center">
         <TextValue
           title={title}
           subtitle={subtitle}
