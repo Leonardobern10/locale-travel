@@ -2,7 +2,6 @@ import type { LocalWayServiceProps } from "src/types/LocaleWayServiceProps";
 import service1 from "@images/travel_tech.jpg";
 import service2 from "@images/concierge_travel.png";
 import service3 from "@images/spend_smarter.png";
-import { BsBuildings } from "react-icons/bs";
 import { PiAirplaneTakeoffBold } from "react-icons/pi";
 import { BsPersonFillGear } from "react-icons/bs";
 import { RiMoneyDollarBoxLine } from "react-icons/ri";
