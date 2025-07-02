@@ -1,4 +1,5 @@
 import type { ReactElement } from "react";
+import TextDefault from "../TextDefault";
 
 export default function ParagraphValue(props: {
   paragraphs: Array<string>;
@@ -6,7 +7,7 @@ export default function ParagraphValue(props: {
   return (
     <div className="flex flex-col gap-y-5 tracking-wide">
       {props.paragraphs.map((el, index) => (
-        <p key={index}>{el}</p>
+        <TextDefault text={el} key={index} />
       ))}
     </div>
   );
