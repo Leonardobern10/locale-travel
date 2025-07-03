@@ -6,8 +6,15 @@ import TiltedCard from "../../ui/TiltedCard/TiltedCard";
 import Subtitle from "../Subtitle";
 import useWidth from "src/hooks/useWidth";
 import ManagementTravelServiceMobile from "./ManagementTravelServiceMobile";
+import useShowSequence from "src/hooks/useShowSequence";
 
 export default function LocaleWay(): ReactElement {
+  if (useWidth() > 575) {
+    useShowSequence(".tilted-card", "#container-locale-way");
+  } else {
+    useShowSequence(".travel-service", "#container-locale-way");
+  }
+
   return (
     <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 padding-v-content padding-v-mobile font-hunnin md:bg-linear-to-t md:from-0% md:from-esmerald/70 md:to-40% md:to-white-default">
       <div className="flex flex-col items-center justify-between h-fit">
@@ -17,7 +24,10 @@ export default function LocaleWay(): ReactElement {
         />
         <Subtitle white={false} title={LocaleWayServiceData.description} />
       </div>
-      <div className="padding-h-content h-fit md:h-130 w-full flex flex-col md:flex-row items-center justify-between gap-x-4">
+      <div
+        id="container-locale-way"
+        className="padding-h-content h-fit md:h-130 w-full flex flex-col md:flex-row items-center justify-between gap-x-4"
+      >
         {useWidth() > 575
           ? LocaleWayServiceData.services.map((el) => (
               <TiltedCard

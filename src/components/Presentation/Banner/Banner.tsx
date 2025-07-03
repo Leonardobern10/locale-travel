@@ -2,7 +2,7 @@ import type { BannerProps } from "../../../types/BannerProps";
 import { useRef, type ReactElement } from "react";
 import BannerTitle from "./BannerTitle";
 import Link from "src/components/Link";
-import { useScroll } from "src/animation/scroll";
+import { useScroll } from "src/hooks/useScroll";
 
 export default function Banner({
   bannerTitle,

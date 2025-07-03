@@ -1,7 +1,7 @@
 import type { OfferDataProps } from "src/types/OfferDataProps";
 import { useRef, type ReactElement } from "react";
 import ButtonDefault from "../ButtonDefault";
-import { useScroll } from "src/animation/scroll";
+import { useScroll } from "src/hooks/useScroll";
 import useWidth from "src/hooks/useWidth";
 
 export default function OfferComponent({

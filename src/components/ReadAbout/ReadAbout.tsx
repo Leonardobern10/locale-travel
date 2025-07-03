@@ -4,10 +4,16 @@ import Link from "../Link";
 import { readAboutData } from "@data/ReadAboutData";
 import Subtitle from "../Subtitle";
 import ParagraphValue from "../OurValue/ParagraphValue";
+import { useShowContainer } from "src/hooks/useShowContainer";
 
 export default function ReadAbout(): ReactElement {
+  useShowContainer("#section-read-about");
+
   return (
-    <section className="h-full w-screen flex flex-col items-center justify-between gap-y-20 py-10 padding-h-content padding-v-mobile">
+    <section
+      id="section-read-about"
+      className="h-full w-screen flex flex-col items-center justify-between gap-y-20 py-10 padding-h-content padding-v-mobile"
+    >
       <div className="flex flex-col items-center md:items-start md:self-start justify-between w-full gap-y-5">
         <TitleSectionColored
           title={readAboutData.title}

@@ -2,7 +2,7 @@ import { useRef, type ReactElement } from "react";
 import logo from "@images/logo.svg";
 import NavBar from "./NavBar";
 import { items } from "../../../data/NavBarItems";
-import { useScroll } from "src/animation/scroll";
+import { useScroll } from "src/hooks/useScroll";
 
 export default function Header(): ReactElement {
   const headerRef = useRef<HTMLDivElement>(null);
