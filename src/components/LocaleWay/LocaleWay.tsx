@@ -9,7 +9,7 @@ import ManagementTravelServiceMobile from "./ManagementTravelServiceMobile";
 import useShowSequence from "src/hooks/useShowSequence";
 
 export default function LocaleWay(): ReactElement {
-  if (useWidth() > 768) {
+  if (useWidth()) {
     useShowSequence(".tilted-card", "#container-locale-way");
   } else {
     useShowSequence(".travel-service", "#container-locale-way");
@@ -28,7 +28,7 @@ export default function LocaleWay(): ReactElement {
         id="container-locale-way"
         className="padding-h-content h-fit md:h-130 w-full flex flex-col md:flex-row items-center justify-between gap-x-4"
       >
-        {useWidth() > 768
+        {useWidth()
           ? LocaleWayServiceData.services.map((el) => (
               <TiltedCard
                 padding="0"

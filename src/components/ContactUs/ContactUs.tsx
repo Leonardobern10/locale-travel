@@ -79,7 +79,7 @@ export default function ContactUs(): ReactElement {
 
   return (
     <section className="w-screen h-5/6 flex flex-row font-hunnin">
-      {useWidth() > 768 && (
+      {useWidth() && (
         <div className="md:w-1/2">
           <img
             className="w-full h-full"
