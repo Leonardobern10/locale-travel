@@ -13,7 +13,7 @@ export default function ManagementTravelServiceMobile({
           <div className="p-4 rounded-2xl bg-esmerald">
             <Icon className="w-10 h-10" />
           </div>
-          <h4 className="text-md text-esmerald">{service}</h4>
+          <h4 className="text-md text-esmerald text-center">{service}</h4>
         </div>
       </div>
     </div>

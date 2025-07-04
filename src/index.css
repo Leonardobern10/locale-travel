@@ -13,14 +13,14 @@
 }
 
 .padding-h-content {
-  @apply md:px-30;
+  @apply lg:px-30;
 }
 .padding-v-content {
-  @apply md:py-20;
+  @apply lg:py-20;
 }
 .padding-v-mobile {
-  @apply max-md:py-10;
+  @apply max-lg:py-10;
 }
 .padding-h-mobile {
-  @apply max-md:px-10;
+  @apply max-lg:px-10;
 }

@@ -24,7 +24,7 @@ export default function WeDo(): ReactElement {
       </div>
       <div
         id="all-we-do"
-        className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:w-5/6 h-fit place-content-center items-start gap-4 md:gap-8"
+        className="grid grid-cols-1 md:grid-cols-2 md:grid-row-3  lg:grid-cols-3 lg:grid-rows-2 md:w-5/6 h-fit place-content-center items-start gap-4 md:gap-8"
       >
         {doThisData.map((el) => (
           <DoThis

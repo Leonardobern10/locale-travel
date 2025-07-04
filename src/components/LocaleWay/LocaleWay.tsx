@@ -16,7 +16,7 @@ export default function LocaleWay(): ReactElement {
   }
 
   return (
-    <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 padding-v-content padding-v-mobile font-hunnin md:bg-linear-to-t md:from-0% md:from-esmerald/70 md:to-40% md:to-white-default">
+    <section className="border-2 w-full h-full flex flex-col items-center justify-between gap-y-15 padding-v-content padding-v-mobile font-hunnin md:bg-linear-to-t md:from-0% md:from-esmerald/70 md:to-40% md:to-white-default">
       <div className="flex flex-col items-center justify-between h-fit">
         <TitleSectionColored
           padding={true}
@@ -26,7 +26,7 @@ export default function LocaleWay(): ReactElement {
       </div>
       <div
         id="container-locale-way"
-        className="padding-h-content h-fit md:h-130 w-full flex flex-col md:flex-row items-center justify-between gap-x-4"
+        className="padding-h-content h-fit lg:h-130 w-full flex flex-col md:flex-row items-center justify-between gap-x-4"
       >
         {useWidth()
           ? LocaleWayServiceData.services.map((el) => (

@@ -14,13 +14,13 @@ export default function OurValueComponent({
   return (
     <article
       className={`w-full h-full flex flex-col ${
-        rightPosition ? "md:flex-row-reverse" : "md:flex-row"
+        rightPosition ? "lg:flex-row-reverse" : "lg:flex-row"
       } items-center justify-between`}
     >
-      <div className="w-full md:w-1/2 h-full">
+      <div className="w-full lg:w-1/2 h-full">
         <img className="w-full h-full" src={image} alt="Image for our values" />
       </div>
-      <div className="w-5/6 md:w-1/2 h-full padding-h-content padding-v-mobile md:py-0 flex flex-col items-center justify-center">
+      <div className="w-5/6 lg:w-1/2 h-full padding-h-content padding-v-mobile md:py-0 flex flex-col items-center justify-center">
         <TextValue
           title={title}
           subtitle={subtitle}
