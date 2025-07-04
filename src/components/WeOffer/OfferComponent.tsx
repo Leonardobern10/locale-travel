@@ -40,7 +40,7 @@ export default function OfferComponent({
         <h4 className="md:text-5xl text-white font-chonburi font-bold">
           {offerTitle}
         </h4>
-        {useWidth() > 575 && (
+        {useWidth() > 768 && (
           <ButtonDefault
             black={false}
             buttonName={linkName}

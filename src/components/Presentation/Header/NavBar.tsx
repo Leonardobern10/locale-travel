@@ -7,7 +7,7 @@ import useWidth from "src/hooks/useWidth";
 export default function NavBar({ items }: NavBarProps): ReactElement {
   return (
     <nav className="w-fit flex flex-row items-center justify-between md:justify-evenly gap-x-8">
-      {useWidth() > 575 && (
+      {useWidth() > 768 && (
         <ul className="flex flex-row items-center justify-evenly gap-x-8 font-hunnin ">
           {items.map((el, index) => (
             <li
