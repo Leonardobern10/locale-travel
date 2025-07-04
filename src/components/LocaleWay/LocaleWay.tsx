@@ -16,7 +16,7 @@ export default function LocaleWay(): ReactElement {
   }
 
   return (
-    <section className="border-2 w-full h-full flex flex-col items-center justify-between gap-y-15 padding-v-content padding-v-mobile font-hunnin md:bg-linear-to-t md:from-0% md:from-esmerald/70 md:to-40% md:to-white-default">
+    <section className="w-full h-full flex flex-col items-center justify-between gap-y-15 padding-v-content padding-v-mobile font-hunnin md:bg-linear-to-t md:from-0% md:from-esmerald/70 md:to-40% md:to-white-default">
       <div className="flex flex-col items-center justify-between h-fit">
         <TitleSectionColored
           padding={true}
