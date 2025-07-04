@@ -101,7 +101,7 @@ export default function ContactUs(): ReactElement {
             <Subtitle white={true} title={titlesText.subtitle} />
           </div>
           <form
-            className="flex w-full md:w-6/7 lg:w-full flex-col gap-y-4 pb-4"
+            className="flex w-full sm:w-6/7 lg:w-full flex-col gap-y-4 pb-4"
             onSubmit={handleSubmit}
           >
             <div className="flex flex-col gap-y-2">
