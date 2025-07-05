@@ -3,6 +3,7 @@ import ButtonHeader from "../../ButtonHeader";
 import { iconsButton } from "@data/ButtonIcons";
 import type { NavBarProps } from "src/types/NavBarProps";
 import useWidth from "src/hooks/useWidth";
+import { Link } from "react-scroll";
 
 export default function NavBar({ items }: NavBarProps): ReactElement {
   return (
@@ -14,7 +15,9 @@ export default function NavBar({ items }: NavBarProps): ReactElement {
               className="text-lg font-bold text-white text-shadow-2xs text-shadow-black hover:cursor-pointer hover:text-shadow-xs hover:text-shadow-esmerald"
               key={index}
             >
-              {el}
+              <Link to={el.href} smooth={true} duration={500}>
+                {el.title}
+              </Link>
             </li>
           ))}
         </ul>
