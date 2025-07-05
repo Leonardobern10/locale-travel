@@ -1,7 +1,7 @@
 import type { BannerProps } from "../../../types/BannerProps";
 import { useRef, type ReactElement } from "react";
 import BannerTitle from "./BannerTitle";
-import Link from "src/components/Link";
+import LinkDefault from "src/components/LinkDefault";
 import { useScroll } from "src/hooks/useScroll";
 
 export default function Banner({
@@ -20,7 +20,7 @@ export default function Banner({
       <p className="text-white w-full font-hunnin text-md md:text-lg md:text-center lg:text-left">
         {description}
       </p>
-      <Link linkName={buttonContent} />
+      <LinkDefault linkName={buttonContent} />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import type { ValueContentProps } from "src/types/ValueContentProps";
 import type { ReactElement } from "react";
 import TitleSectionColored from "../TitleSection";
 import ParagraphValue from "./ParagraphValue";
-import Link from "../Link";
+import LinkDefault from "../LinkDefault";
 
 export default function TextValue({
   title,
@@ -15,7 +15,7 @@ export default function TextValue({
       <TitleSectionColored padding={false} title={title} />
       <h4 className="text-neutral-800/50 font-bold md:text-xl">{subtitle}</h4>
       <ParagraphValue paragraphs={paragraphs} />
-      <Link linkName={linkName} />
+      <LinkDefault linkName={linkName} />
     </div>
   );
 }

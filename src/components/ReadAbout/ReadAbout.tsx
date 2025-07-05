@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import TitleSectionColored from "../TitleSection";
-import Link from "../Link";
+import LinkDefault from "../LinkDefault";
 import { readAboutData } from "@data/ReadAboutData";
 import Subtitle from "../Subtitle";
 import ParagraphValue from "../OurValue/ParagraphValue";
@@ -34,7 +34,7 @@ export default function ReadAbout(): ReactElement {
           <ParagraphValue
             paragraphs={[readAboutData.text1, readAboutData.text2]}
           />
-          <Link linkName={readAboutData.buttonName} />
+          <LinkDefault linkName={readAboutData.buttonName} />
         </div>
       </div>
     </section>
