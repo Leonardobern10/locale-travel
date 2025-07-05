@@ -4,7 +4,7 @@ import OurValueComponent from "./OurValueComponent";
 
 export default function OurValues(): ReactElement {
   return (
-    <section className="w-screen h-fit">
+    <section id="section-our-values" className="w-screen h-fit">
       {ourValueData.map((el) => (
         <OurValueComponent
           key={el.index}
