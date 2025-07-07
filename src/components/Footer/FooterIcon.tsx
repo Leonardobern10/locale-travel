@@ -8,7 +8,10 @@ export default function FooterIcon(props: { icon: IconType }): ReactElement {
       data-testid="footer-icon"
       className="w-10 h-10 hover:scale-110 hover:cursor-pointer"
     >
-      <Icon className="w-full h-full text-esmerald" />
+      <Icon
+        data-testid="icon-imports"
+        className="w-full h-full text-esmerald"
+      />
     </div>
   );
 }
