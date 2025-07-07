@@ -32,7 +32,10 @@ export default function Footer(): ReactElement {
               <FooterIcon key={el.index} icon={el.icon} />
             ))}
       </div>
-      <p className="w-5/6 md:w-full text-sm md:text-lg text-neutral-400 text-center">
+      <p
+        data-testid="footer-copyright"
+        className="w-5/6 md:w-full text-sm md:text-lg text-neutral-400 text-center"
+      >
         {textCopyright}
       </p>
     </footer>
