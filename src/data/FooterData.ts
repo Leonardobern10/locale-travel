@@ -14,7 +14,7 @@ export const footerData = [
   {
     index: 2,
     title: "Contato",
-    text: "+1300 811 033 \n",
+    text: "+1300 811 033",
   },
 ];
 
