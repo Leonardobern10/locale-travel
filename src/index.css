@@ -16,7 +16,7 @@
      @apply md:px-25 lg:px-30;
 }
 .padding-v-content {
-     @apply lg:py-20;
+     @apply md:py-10 lg:py-20;
 }
 .padding-v-mobile {
      @apply max-lg:py-10;
