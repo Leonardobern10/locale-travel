@@ -36,7 +36,7 @@ export default function OfferComponent({
                     className={`absolute bottom-3 md:bottom-10 lg:bottom-20 ${
                          i ? 'left-20' : 'right-20'
                     } flex flex-col items-center md:gap-y-4`}>
-                    <h4 className="md:text-3xl lg:text-5xl text-white font-chonburi font-bold">
+                    <h4 className="md:text-3xl xl:text-4xl text-white font-chonburi font-bold">
                          {offerTitle}
                     </h4>
                     {useWidth() && (
