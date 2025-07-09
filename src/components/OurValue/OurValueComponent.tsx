@@ -15,7 +15,7 @@ export default function OurValueComponent({
           <article
                className={`w-full h-full flex flex-col ${
                     rightPosition ? 'lg:flex-row-reverse' : 'lg:flex-row'
-               } items-center justify-between`}>
+               } items-center justify-between padding-v-content`}>
                <div className="w-full lg:w-1/2 h-full">
                     <img
                          className="w-full h-full"
