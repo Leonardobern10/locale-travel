@@ -11,7 +11,7 @@ export default function Header(): ReactElement {
      return (
           <header
                ref={headerRef}
-               className="border-2 padding-h-content w-full h-16 lg:h-20 px-4 py-1 flex flex-row items-center justify-between gap-y-2 ">
+               className="padding-h-content w-full h-16 lg:h-20 px-4 py-1 flex flex-row items-center justify-between gap-y-2 ">
                <div className="w-28 h-12 md:w-fit md:h-10 flex-shrink-0 flex items-center justify-center">
                     <img
                          src={logo}
