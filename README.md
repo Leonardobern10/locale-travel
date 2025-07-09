@@ -1,54 +1,130 @@
-# React + TypeScript + Vite
+# Locale Travel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto front-end desenvolvido em React + TypeScript, com Vite e TailwindCSS, focado em responsividade, acessibilidade e boas práticas de desenvolvimento. O sistema simula uma landing page para uma empresa de viagens corporativas, com seções informativas, formulário de contato, valores, ofertas e diferenciais.
 
-Currently, two official plugins are available:
+## Índice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Demonstração](#demonstração)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Estrutura de Pastas](#estrutura-de-pastas)
+- [Como Rodar o Projeto](#como-rodar-o-projeto)
+- [Testes](#testes)
+- [Padrões e Boas Práticas](#padrões-e-boas-práticas)
+- [Acessibilidade e Responsividade](#acessibilidade-e-responsividade)
+- [Contribuição](#contribuição)
 
-## Expanding the ESLint configuration
+## Demonstração
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<p align="center">
+  <img src="public/Captura%20de%20tela%202025-07-09%20164214.png" alt="Tela principal" width="400"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20164235.png" alt="Seção de valores" width="400"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165054.png" alt="Formulário de contato" width="400"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165104.png" alt="Ofertas" width="400"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165117.png" alt="Diferenciais" width="400"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165129.png" alt="Mobile" width="200"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165137.png" alt="Mobile" width="200"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165148.png" alt="Mobile" width="200"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165159.png" alt="Mobile" width="200"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165230.png" alt="Mobile" width="200"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165238.png" alt="Mobile" width="200"/>
+  <img src="public/Captura%20de%20tela%202025-07-09%20165300.png" alt="Mobile" width="200"/>
+</p>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Tecnologias Utilizadas
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Vitest](https://vitest.dev/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## Estrutura de Pastas
+
+```
+├── public/
+├── src/
+│   ├── animation/           # Hooks e utilitários de animação
+│   ├── assets/              # Imagens e ícones
+│   ├── components/          # Componentes reutilizáveis
+│   │   ├── ContactUs/
+│   │   ├── Footer/
+│   │   ├── Invite/
+│   │   ├── LocaleWay/
+│   │   ├── OurValue/
+│   │   ├── Presentation/
+│   │   ├── ReadAbout/
+│   │   ├── WeDo/
+│   │   ├── WeOffer/
+│   ├── data/                # Dados estáticos e mockados
+│   ├── hooks/               # Hooks customizados
+│   ├── tests/               # Testes unitários
+│   ├── types/               # Tipos TypeScript
+│   ├── ui/                  # Componentes de UI genéricos
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como Rodar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone o repositório:**
+     ```sh
+     git clone https://github.com/Leonardobern10/locale-travel
+     cd locale-travel
+     ```
+2. **Instale as dependências:**
+     ```sh
+     npm install
+     ```
+3. **Rode o projeto em modo desenvolvimento:**
+     ```sh
+     npm run dev
+     ```
+4. **Acesse:**
+     - [http://localhost:5173](http://localhost:5173)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## Testes
+
+- Para rodar todos os testes unitários:
+     ```sh
+     npm run test
+     ```
+- Os testes cobrem renderização, estilização, acessibilidade e integração dos principais componentes.
+- Utilize `data-testid` para facilitar a seleção de elementos nos testes.
+
+## Padrões e Boas Práticas
+
+- Componentização e reutilização de código.
+- Tipagem forte com TypeScript.
+- Separação de dados, lógica e apresentação.
+- Uso de hooks customizados para lógica compartilhada.
+- Responsividade com TailwindCSS (`flex-col md:flex-row`, breakpoints, etc).
+- Acessibilidade: uso de alt, labels, campos controlados e roles semânticos.
+- Testes automatizados com cobertura relevante.
+
+## Acessibilidade e Responsividade
+
+- Layout mobile-first, adaptando para desktop com breakpoints do Tailwind.
+- Imagens e ícones com alt e roles apropriados.
+- Formulários com labels, validação e feedback visual.
+- Navegação por teclado garantida nos principais componentes.
+
+## Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch: `git checkout -b minha-feature`
+3. Commit suas alterações: `git commit -m 'feat: minha nova feature'`
+4. Push para o fork: `git push origin minha-feature`
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto é open-source e está sob a licença MIT.
