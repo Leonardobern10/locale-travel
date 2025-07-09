@@ -13,7 +13,7 @@
 }
 
 .padding-h-content {
-     @apply lg:px-30;
+     @apply md:px-20 lg:px-30;
 }
 .padding-v-content {
      @apply lg:py-20;
