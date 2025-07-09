@@ -1,4 +1,4 @@
 export type SectionTextType = {
-  title: string;
-  subtitle: string;
+     title: string;
+     subtitle: string;
 };

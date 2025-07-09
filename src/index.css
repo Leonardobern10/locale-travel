@@ -1,26 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Chonburi&family=Huninn&family=Plaster&family=Ranchers&display=swap");
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Huninn&family=Plaster&family=Ranchers&display=swap');
+@import 'tailwindcss';
 
 @theme {
-  --font-chonburi: "Chonburi", serif;
-  --font-plaster: "Plaster", system-ui;
-  --font-hunnin: "Huninn", sans-serif;
-  --font-ranchers: "Ranchers", sans-serif;
-  --color-esmerald: #3abcb6;
-  --color-white-default: #fff;
-  --color-black-default: #151515;
-  --shadow-offer: -20px 20px 100px #3abcb6;
+     --font-chonburi: 'Chonburi', serif;
+     --font-plaster: 'Plaster', system-ui;
+     --font-hunnin: 'Huninn', sans-serif;
+     --font-ranchers: 'Ranchers', sans-serif;
+     --color-esmerald: #3abcb6;
+     --color-white-default: #fff;
+     --color-black-default: #151515;
+     --shadow-offer: -20px 20px 100px #3abcb6;
 }
 
 .padding-h-content {
-  @apply lg:px-30;
+     @apply lg:px-30;
 }
 .padding-v-content {
-  @apply lg:py-20;
+     @apply lg:py-20;
 }
 .padding-v-mobile {
-  @apply max-lg:py-10;
+     @apply max-lg:py-10;
 }
 .padding-h-mobile {
-  @apply max-lg:px-10;
+     @apply max-lg:px-10;
 }

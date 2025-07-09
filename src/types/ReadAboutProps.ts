@@ -1,7 +1,7 @@
 export type ReadAboutProps = {
-  title: string;
-  subtitle: string;
-  text: string;
-  buttonName: string;
-  image: string;
+     title: string;
+     subtitle: string;
+     text: string;
+     buttonName: string;
+     image: string;
 };

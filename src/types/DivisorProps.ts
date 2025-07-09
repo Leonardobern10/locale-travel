@@ -1,7 +1,7 @@
-import type { IconType } from "react-icons";
+import type { IconType } from 'react-icons';
 
 export type DivisorProps = {
-  text: string;
-  icon: IconType;
-  buttonText: string;
+     text: string;
+     icon: IconType;
+     buttonText: string;
 };

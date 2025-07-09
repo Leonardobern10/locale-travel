@@ -1,7 +1,7 @@
-import type { ServiceType } from "./ServiceTypes";
+import type { ServiceType } from './ServiceTypes';
 
 export type LocalWayServiceProps = {
-  title: string;
-  description: string;
-  services: Array<ServiceType>;
+     title: string;
+     description: string;
+     services: Array<ServiceType>;
 };

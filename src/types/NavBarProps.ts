@@ -1,5 +1,5 @@
-import type { NavBarItemsType } from "./NavBarItemsType";
+import type { NavBarItemsType } from './NavBarItemsType';
 
 export type NavBarProps = {
-  items: Array<NavBarItemsType>;
+     items: Array<NavBarItemsType>;
 };
