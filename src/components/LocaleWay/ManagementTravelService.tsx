@@ -11,6 +11,7 @@ export default function ManagementTravelService({
      const [show, setShow] = useState(false);
      return (
           <div
+               data-testid="management-travel-container-desktop"
                onMouseEnter={() => setShow(true)}
                onMouseLeave={() => setShow(false)}
                className="relative h-full w-full bg-cover bg-no-repeat bg-center transition-all duration-300 ease-in-out"
@@ -18,7 +19,10 @@ export default function ManagementTravelService({
                <div className="absolute bottom-0 h-fit w-full bg-esmerald/80 font-hunnin text-white-default">
                     <div className="flex h-20 flex-row items-center justify-start gap-x-5 py-2 px-5">
                          <div>
-                              <Icon className="w-10 h-10" />
+                              <Icon
+                                   data-testid="icon-management-travel-desktop"
+                                   className="w-10 h-10"
+                              />
                          </div>
                          <h4 className="text-lg">{service}</h4>
                     </div>

@@ -11,7 +11,10 @@ export default function ManagementTravelServiceMobile({
                <div className="h-full w-full flex flex-col gap-y-2">
                     <div className="flex flex-col items-center justify-evenly gap-y-4">
                          <div className="p-4 rounded-2xl bg-esmerald">
-                              <Icon className="w-10 h-10" />
+                              <Icon
+                                   data-testid="icon-travel-service-mobile"
+                                   className="w-10 h-10"
+                              />
                          </div>
                          <h4 className="text-md text-esmerald text-center">
                               {service}
