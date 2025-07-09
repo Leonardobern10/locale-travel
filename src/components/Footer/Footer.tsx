@@ -27,8 +27,9 @@ export default function Footer(): ReactElement {
                </div>
                <div className="w-5/6 md:w-full flex flex-row items-center justify-evenly gap-x-5">
                     {useWidth()
-                         ? footerIcons.map((el) => (
+                         ? footerIcons.map((el, index) => (
                                 <SpotlightCard
+                                     key={index}
                                      children={
                                           <FooterIcon
                                                key={el.index}
