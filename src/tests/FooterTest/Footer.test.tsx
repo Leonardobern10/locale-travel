@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { it, expect } from 'vitest';
-import Footer from '../components/Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 import { footerData, footerIcons } from '@data/FooterData';
 
 it('deve renderizar o rodapé com a logo', () => {
