@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Huninn&family=Plaster&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Huninn&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Plaster&family=Ranchers&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -6,6 +6,7 @@
      --font-plaster: 'Plaster', system-ui;
      --font-hunnin: 'Huninn', sans-serif;
      --font-ranchers: 'Ranchers', sans-serif;
+     --font-ibm: 'IBM Plex Sans', sans-serif;
      --color-esmerald: #3abcb6;
      --color-white-default: #fff;
      --color-black-default: #151515;
