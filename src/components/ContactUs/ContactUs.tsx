@@ -6,6 +6,7 @@ import Input from './Input';
 import Subtitle from '../Subtitle';
 import { placeholders, titlesText } from '@data/ContactUsData';
 import useWidth from 'src/hooks/useWidth';
+import useSlide from 'src/hooks/useSlide';
 
 export default function ContactUs(): ReactElement {
      const [fields, setFields] = useState({
@@ -77,12 +78,15 @@ export default function ContactUs(): ReactElement {
           }
      }
 
+     useSlide('#section-contact-us', -100);
+     useSlide('#form-contact-us', 200);
+
      return (
           <section
                id="section-contact-us"
                className="w-screen h-5/6 flex flex-row font-hunnin">
                {useWidth() && (
-                    <div className="lg:w-1/2">
+                    <div id="img-contact-us" className="lg:w-1/2">
                          <img
                               className="w-full h-full"
                               src={image}
@@ -90,7 +94,9 @@ export default function ContactUs(): ReactElement {
                          />
                     </div>
                )}
-               <div className="w-full lg:w-1/2 p-4 padding-h-content bg-esmerald">
+               <div
+                    id="form-contact-us"
+                    className="w-full lg:w-1/2 p-4 padding-h-content bg-esmerald">
                     <div className="flex flex-col gap-y-10 items-center">
                          <div className="">
                               <TitleSectionColored
