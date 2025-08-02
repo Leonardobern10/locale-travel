@@ -8,8 +8,10 @@ export default function Presentation(): ReactElement {
      const content = bannerTitleData;
      return (
           <div
-               className="w-screen h-full lg:h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center"
-               style={{ backgroundImage: `url(${imageMain})` }}>
+               className="w-screen h-full lg:h-full flex flex-col justify-between bg-cover bg-no-repeat bg-center"
+               style={{
+                    backgroundImage: `url(${imageMain})`
+               }}>
                <Banner
                     bannerTitle={content.title}
                     description={content.description}
