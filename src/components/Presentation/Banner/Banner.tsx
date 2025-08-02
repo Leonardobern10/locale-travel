@@ -14,12 +14,14 @@ export default function Banner({
      return (
           <div
                ref={bannerRef}
-               className="p-6 padding-h-content w-full lg:w-5/7 h-full flex flex-col items-center lg:items-start justify-center lg:justify-center gap-y-4 md:gap-y-4">
+               className="p-6 w-full lg:w-5/7 h-screen flex flex-col items-center lg:items-start justify-center lg:justify-center gap-y-4 md:gap-y-4">
                <BannerTitle title={bannerTitle} />
-               <p className="text-white w-full lg:w-5/7 font-hunnin text-md md:text-lg md:text-center lg:text-left">
-                    {description}
-               </p>
-               <LinkDefault linkName={buttonContent} />
+               <div>
+                    <p className="text-white w-full lg:w-5/7 font-hunnin text-md md:text-lg md:text-center lg:text-left">
+                         {description}
+                    </p>
+                    <LinkDefault linkName={buttonContent} />
+               </div>
           </div>
      );
 }
