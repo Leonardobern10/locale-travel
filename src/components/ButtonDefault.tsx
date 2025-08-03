@@ -6,7 +6,7 @@ export default function ButtonDefault({
      buttonName,
      onClick,
      icon,
-     black,
+     theme,
      disabled,
      type
 }: ButtonDefaultProps): ReactElement {
@@ -25,9 +25,7 @@ export default function ButtonDefault({
                          ? 'flex flex-row items-center justify-between w-fit'
                          : ''
                } ${
-                    black
-                         ? 'bg-black-default text-white'
-                         : 'bg-white text-esmerald border-2 border-esmerald'
+                    theme ?? 'bg-white text-esmerald border-2 border-esmerald'
                } w-fit h-fit md:h-12 text-sm md:text-lg py-2 px-4 md:px-7 font-hunnin rounded-4xl hover:cursor-pointer hover:scale-95
         ${disabled ? 'opacity-50 cursor-not-allowed hover:scale-100' : ''}
       `}>
