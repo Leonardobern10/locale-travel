@@ -1,4 +1,4 @@
-import type { ButtonDefaultProps } from 'src/types/ButtonDefaultProps';
+import type { ButtonDefaultProps } from 'src/types/button/ButtonDefaultProps';
 import type { MouseEvent, ReactElement } from 'react';
 import { FaArrowTrendUp } from 'react-icons/fa6';
 

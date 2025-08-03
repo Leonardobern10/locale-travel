@@ -1,4 +1,4 @@
-import { InputType } from 'src/types/InputType';
+import { InputType } from 'src/types/input/InputType';
 import type { ReactElement } from 'react';
 import type { UseFormRegisterReturn } from 'react-hook-form';
 

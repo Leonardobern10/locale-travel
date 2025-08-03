@@ -1,4 +1,4 @@
-import { InputType } from 'src/types/InputType';
+import { InputType } from 'src/types/input/InputType';
 import Input from 'src/components/Input';
 import registerImage from '@images/register_image.png';
 import Logo from 'src/components/Logo';
@@ -6,7 +6,7 @@ import ButtonDefault from 'src/components/ButtonDefault';
 import TitleSectionColored from 'src/components/TitleSection';
 import DescriptionText from 'src/components/DescriptionText';
 import { useForm, type SubmitHandler } from 'react-hook-form';
-import { type InputUser, InputUserSchema } from 'src/types/InputUser';
+import { type InputUser, InputUserSchema } from 'src/types/input/InputUser';
 import useWidth from 'src/hooks/useWidth';
 import { createUser } from 'src/services/RegisterService';
 import { zodResolver } from '@hookform/resolvers/zod';

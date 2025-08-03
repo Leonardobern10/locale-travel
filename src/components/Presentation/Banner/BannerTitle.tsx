@@ -1,4 +1,4 @@
-import type { BannerTitleProps } from 'src/types/BannerTitleProps';
+import type { BannerTitleProps } from 'src/types/banner/BannerTitleProps';
 import type { ReactElement } from 'react';
 
 export default function BannerTitle({ title }: BannerTitleProps): ReactElement {

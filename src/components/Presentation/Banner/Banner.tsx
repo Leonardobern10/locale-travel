@@ -1,4 +1,4 @@
-import type { BannerProps } from '../../../types/BannerProps';
+import type { BannerProps } from '../../../types/banner/BannerProps';
 import { useRef, type ReactElement } from 'react';
 import BannerTitle from './BannerTitle';
 import LinkDefault from 'src/components/LinkDefault';
