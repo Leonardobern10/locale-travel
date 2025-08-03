@@ -7,7 +7,8 @@ export default function ButtonDefault({
      onClick,
      icon,
      black,
-     disabled
+     disabled,
+     type
 }: ButtonDefaultProps): ReactElement {
      const handleClick = (e: MouseEvent) => {
           e.stopPropagation();
@@ -18,6 +19,7 @@ export default function ButtonDefault({
           <button
                disabled={disabled}
                onClick={handleClick}
+               type={`${type ?? 'button'}`}
                className={`${
                     icon
                          ? 'flex flex-row items-center justify-between w-fit'
