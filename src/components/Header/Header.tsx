@@ -1,8 +1,8 @@
 import { useRef, type ReactElement } from 'react';
-import logo from '@images/logo.svg';
 import NavBar from './NavBar';
 import { items } from '../../data/NavBarItems';
 import { useScroll } from 'src/hooks/useScroll';
+import Logo from '../Logo';
 
 export default function Header(): ReactElement {
      const headerRef = useRef<HTMLDivElement>(null);
@@ -11,14 +11,8 @@ export default function Header(): ReactElement {
      return (
           <header
                ref={headerRef}
-               className="fixed w-full h-16 lg:h-16 px-4 py-1 flex flex-row items-center justify-between gap-y-2 bg-transparent">
-               <div className="w-28 h-12 md:w-fit md:h-10 flex-shrink-0 flex items-center justify-center">
-                    <img
-                         src={logo}
-                         alt="Logo"
-                         className="w-full h-full object-contain"
-                    />
-               </div>
+               className="w-full h-16 lg:h-16 px-6 py-1 flex flex-row items-center justify-between gap-y-2 bg-transparent">
+               <Logo />
                <div className="w-fit lg:w-full flex justify-center lg:justify-end">
                     <NavBar items={items} />
                </div>
