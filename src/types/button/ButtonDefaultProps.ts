@@ -1,10 +1,11 @@
 import type { ReactNode } from 'react';
+import type { ButtonThemeType } from './ButtonThemeType';
 
 export type ButtonDefaultProps = {
      buttonName: string | ReactNode;
      icon?: boolean;
      onClick?: Function;
-     black: boolean;
+     theme?: ButtonThemeType;
      type?: 'button' | 'submit' | 'reset';
      disabled?: boolean;
 };
