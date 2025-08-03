@@ -3,15 +3,17 @@ import imageMain from '@images/image-main.png'; // resolve para um path final
 import Banner from './Banner/Banner';
 import { bannerTitleData } from '@data/BannerTitleData';
 import Divisor from './Divisor/Divisor';
+import Header from '../Header/Header';
 
 export default function Presentation(): ReactElement {
      const content = bannerTitleData;
      return (
           <div
-               className="w-screen h-full lg:h-full flex flex-col justify-between bg-cover bg-no-repeat bg-center"
+               className="w-screen h-full lg:h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center"
                style={{
                     backgroundImage: `url(${imageMain})`
                }}>
+               <Header />
                <Banner
                     bannerTitle={content.title}
                     description={content.description}
