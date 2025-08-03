@@ -12,6 +12,8 @@ import { createUser } from 'src/services/RegisterService';
 import { zodResolver } from '@hookform/resolvers/zod';
 import ErrorForm from 'src/components/ErrorForm';
 import { RegisterData } from '@data/RegisterData';
+import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
+import LinkDefault from 'src/components/LinkDefault';
 
 export default function Register() {
      const {
@@ -33,16 +35,18 @@ export default function Register() {
           });
 
      return (
-          <div className="bg-esmerald">
+          <div className="bg-linear-to-b to-esmerald from-neutral-200">
                <div className="flex flex-col md:flex-row h-full md:h-screen w-full max-md:gap-y-8">
                     <div
                          style={{ backgroundImage: `url(${registerImage})` }}
                          className="bg-cover bg-no-repeat h-full md:h-screen w-full md:w-1/2 flex flex-col justify-between px-8 py-3 rounded-b-xl md:rounded-r-xl">
                          <div className="h-50 md:h-fit flex flex-row justify-between items-start md:items-center">
                               <Logo />
-                              <ButtonDefault
-                                   black={false}
-                                   buttonName={RegisterData.backToHome}
+                              <LinkDefault
+                                   theme={ButtonThemeType.TRANSPARENT}
+                                   linkName={RegisterData.backToHome}
+                                   icon={false}
+                                   path="/"
                               />
                          </div>
 
@@ -75,10 +79,10 @@ export default function Register() {
                          className="w-full md:w-1/2 flex flex-col justify-around md:justify-evenly items-center gap-y-4 py-4">
                          <div className="text-center w-5/6">
                               <TitleSectionColored
-                                   white={true}
+                                   white={false}
                                    title={RegisterData.titleForm}
                               />
-                              <p className="text-white font-hunnin text-sm">
+                              <p className="text-neutral-600 font-hunnin text-sm">
                                    {RegisterData.descriptionForm}
                               </p>
                          </div>
@@ -161,7 +165,7 @@ export default function Register() {
                               <ButtonDefault
                                    type="submit"
                                    buttonName={RegisterData.buttonSubmit}
-                                   black={false}
+                                   theme={ButtonThemeType.WHITE}
                                    disabled={!isValid}
                               />
                          </div>
