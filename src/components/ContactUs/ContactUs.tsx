@@ -2,7 +2,7 @@ import { useState, type ReactElement } from 'react';
 import TitleSectionColored from '../TitleSection';
 import ButtonDefault from '../ButtonDefault';
 import image from '@images/image_cel.png';
-import Input from './Input';
+import Input from '../Input';
 import Subtitle from '../Subtitle';
 import { placeholders, titlesText } from '@data/ContactUsData';
 import useWidth from 'src/hooks/useWidth';
