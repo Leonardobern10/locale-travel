@@ -1,4 +1,5 @@
 import { divisorData } from '@data/DivisorData';
+import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 import type { ReactElement } from 'react';
 import ButtonDefault from 'src/components/ButtonDefault';
 import useWidth from 'src/hooks/useWidth';
@@ -16,7 +17,7 @@ export default function Divisor(): ReactElement {
                     </div>
                )}
                <ButtonDefault
-                    black={true}
+                    theme={ButtonThemeType.BLACK}
                     onClick={() => console.log('ola')}
                     buttonName={buttonText}
                />
