@@ -1,9 +1,9 @@
 import type { ReactElement } from 'react';
 import ButtonHeader from '../ButtonHeader';
 import { iconsButton } from '@data/ButtonIcons';
-import type { NavBarProps } from 'src/types/NavBarProps';
 import useWidth from 'src/hooks/useWidth';
 import { Link } from 'react-scroll';
+import type { NavBarProps } from 'src/types/navbar/NavBarProps';
 
 export default function NavBar({ items }: NavBarProps): ReactElement {
      return (
