@@ -1,8 +1,9 @@
 import type { OfferDataProps } from 'src/types/OfferDataProps';
 import { useRef, type ReactElement } from 'react';
-import ButtonDefault from '../ButtonDefault';
+import ButtonDefault from '../Buttons/ButtonDefault';
 import { useScroll } from 'src/hooks/useScroll';
 import useWidth from 'src/hooks/useWidth';
+import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 
 export default function OfferComponent({
      index,
@@ -41,7 +42,7 @@ export default function OfferComponent({
                     </h4>
                     {useWidth() && (
                          <ButtonDefault
-                              black={false}
+                              theme={ButtonThemeType.WHITE}
                               buttonName={linkName}
                               onClick={() => console.log('ola')}
                          />

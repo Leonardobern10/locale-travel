@@ -15,15 +15,15 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import ErrorForm from 'src/components/ErrorForm';
 import { RegisterData } from '@data/RegisterData';
 import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
-import LinkDefault from 'src/components/LinkDefault';
+import LinkDefault from '@/components/Links/LinkDefault';
 import { useState } from 'react';
 import { notifyError, notifySuccess } from '@/services/NotifyService';
 import { PositionToastType } from 'src/types/toast/PositionToastType';
 import { ThemeToastType } from 'src/types/toast/ThemeToastType';
 import { useNavigate, type NavigateFunction } from 'react-router';
 import { ToastContainer } from 'react-toastify';
-import RedirectLink from '@/components/RedirectLink';
-import ButtonSubmit from '@/components/ButtonSubmit';
+import RedirectLink from '@/components/Links/RedirectLink';
+import ButtonSubmit from '@/components/Buttons/ButtonSubmit';
 
 export default function Register() {
      const {

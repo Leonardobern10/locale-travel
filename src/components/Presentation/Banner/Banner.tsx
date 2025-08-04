@@ -1,7 +1,7 @@
 import type { BannerProps } from '../../../types/banner/BannerProps';
 import { useRef, type ReactElement } from 'react';
 import BannerTitle from './BannerTitle';
-import LinkDefault from 'src/components/LinkDefault';
+import LinkDefault from '@/components/Links/LinkDefault';
 import { useScroll } from 'src/hooks/useScroll';
 import DescriptionText from 'src/components/DescriptionText';
 import { ButtonThemeType } from 'src/types/button/ButtonThemeType';

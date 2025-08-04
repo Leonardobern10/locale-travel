@@ -1,10 +1,11 @@
 import type { ReactElement } from 'react';
 import TitleSectionColored from '../TitleSection';
-import LinkDefault from '../LinkDefault';
+import LinkDefault from '../Links/LinkDefault';
 import { readAboutData } from '@data/ReadAboutData';
 import Subtitle from '../Subtitle';
 import ParagraphValue from '../OurValue/ParagraphValue';
 import { useShowContainer } from 'src/hooks/useShowContainer';
+import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 
 export default function ReadAbout(): ReactElement {
      useShowContainer('#section-read-about');
@@ -36,7 +37,11 @@ export default function ReadAbout(): ReactElement {
                                    readAboutData.text2
                               ]}
                          />
-                         <LinkDefault linkName={readAboutData.buttonName} />
+                         <LinkDefault
+                              icon={false}
+                              theme={ButtonThemeType.BLACK}
+                              linkName={readAboutData.buttonName}
+                         />
                     </div>
                </div>
           </section>

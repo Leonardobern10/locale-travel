@@ -7,7 +7,7 @@ import { useState, type ReactElement } from 'react';
 import { useForm, type SubmitHandler } from 'react-hook-form';
 import loginImage from '@images/login_image.png';
 import Logo from '@/components/Logo';
-import LinkDefault from '@/components/LinkDefault';
+import LinkDefault from '@/components/Links/LinkDefault';
 import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 import { RegisterData } from '@data/RegisterData';
 import useWidth from '@/hooks/useWidth';
@@ -22,8 +22,8 @@ import { notifyError, notifySuccess } from '@/services/NotifyService';
 import { PositionToastType } from 'src/types/toast/PositionToastType';
 import { ThemeToastType } from 'src/types/toast/ThemeToastType';
 import { useNavigate, type NavigateFunction } from 'react-router';
-import RedirectLink from '@/components/RedirectLink';
-import ButtonSubmit from '@/components/ButtonSubmit';
+import RedirectLink from '@/components/Links/RedirectLink';
+import ButtonSubmit from '@/components/Buttons/ButtonSubmit';
 
 export default function Login(): ReactElement {
      const {

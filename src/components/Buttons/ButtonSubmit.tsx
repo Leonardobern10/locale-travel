@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import ButtonDefault from './ButtonDefault';
+import ButtonDefault from './Buttons/ButtonDefault';
 import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 
 export default function ButtonSubmit(props: {

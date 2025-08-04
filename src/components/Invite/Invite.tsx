@@ -1,6 +1,7 @@
 import type { ReactElement } from 'react';
-import ButtonDefault from '../ButtonDefault';
+import ButtonDefault from '../Buttons/ButtonDefault';
 import { inviteData } from '@data/InviteData';
+import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 
 export default function Invite(): ReactElement {
      return (
@@ -15,7 +16,7 @@ export default function Invite(): ReactElement {
                     <ButtonDefault
                          buttonName={inviteData.buttonText}
                          onClick={() => console.log('Ola')}
-                         black={false}
+                         theme={ButtonThemeType.WHITE}
                     />
                </div>
           </section>

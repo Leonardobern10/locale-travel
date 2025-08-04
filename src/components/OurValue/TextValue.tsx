@@ -2,7 +2,8 @@ import type { ValueContentProps } from 'src/types/ValueContentProps';
 import type { ReactElement } from 'react';
 import TitleSectionColored from '../TitleSection';
 import ParagraphValue from './ParagraphValue';
-import LinkDefault from '../LinkDefault';
+import LinkDefault from '../Links/LinkDefault';
+import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 
 export default function TextValue({
      title,
@@ -17,7 +18,11 @@ export default function TextValue({
                     {subtitle}
                </h4>
                <ParagraphValue paragraphs={paragraphs} />
-               <LinkDefault linkName={linkName} />
+               <LinkDefault
+                    icon={false}
+                    theme={ButtonThemeType.BLUE}
+                    linkName={linkName}
+               />
           </div>
      );
 }

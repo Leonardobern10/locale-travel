@@ -1,12 +1,14 @@
 import { useState, type ReactElement } from 'react';
 import TitleSectionColored from '../TitleSection';
-import ButtonDefault from '../ButtonDefault';
+import ButtonDefault from '../Buttons/ButtonDefault';
 import image from '@images/image_cel.png';
 import Input from '../Input';
 import Subtitle from '../Subtitle';
 import { placeholders, titlesText } from '@data/ContactUsData';
 import useWidth from 'src/hooks/useWidth';
 import useSlide from 'src/hooks/useSlide';
+import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
+import { InputType } from 'src/types/input/InputType';
 
 export default function ContactUs(): ReactElement {
      const [fields, setFields] = useState({
@@ -125,7 +127,7 @@ export default function ContactUs(): ReactElement {
                                         placeholder={
                                              placeholders.namePlaceholder
                                         }
-                                        type={false}
+                                        type={InputType.TEXT}
                                         onChange={handleChange}
                                         value={fields.name}
                                    />
@@ -147,7 +149,7 @@ export default function ContactUs(): ReactElement {
                                         placeholder={
                                              placeholders.emailPlaceholder
                                         }
-                                        type={true}
+                                        type={InputType.EMAIL}
                                         onChange={handleChange}
                                         value={fields.email}
                                    />
@@ -169,7 +171,7 @@ export default function ContactUs(): ReactElement {
                                         placeholder={
                                              placeholders.subjectPlaceholder
                                         }
-                                        type={false}
+                                        type={InputType.TEXT}
                                         onChange={handleChange}
                                         value={fields.subject}
                                    />
@@ -204,7 +206,7 @@ export default function ContactUs(): ReactElement {
                               <ButtonDefault
                                    disabled={!isFormValid() || isSubmitting}
                                    buttonName="Enviar"
-                                   black={false}
+                                   theme={ButtonThemeType.BLACK}
                                    type="submit"
                               />
                          </form>
