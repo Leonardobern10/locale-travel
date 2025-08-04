@@ -1,4 +1,4 @@
-import type { RegisterDataType } from 'src/types/RegisterDataType';
+import type { RegisterDataType } from 'src/types/user/RegisterDataType';
 
 export const RegisterData: RegisterDataType = {
      backToHome: 'Página inicial',
@@ -10,5 +10,7 @@ export const RegisterData: RegisterDataType = {
      titleForm: 'Cadastro',
      descriptionForm:
           'Bem-vindo à nossa plataforma. Insira seus dados para se cadastrar.',
-     buttonSubmit: 'Enviar'
+     buttonSubmit: 'Enviar',
+     msgToastSuccess: 'Usuário cadastrado com sucesso!',
+     msgToastError: 'Erro ao cadastrar usuário!'
 };
