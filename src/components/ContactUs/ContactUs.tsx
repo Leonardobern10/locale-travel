@@ -125,7 +125,7 @@ export default function ContactUs(): ReactElement {
                                         placeholder={
                                              placeholders.namePlaceholder
                                         }
-                                        email={false}
+                                        type={false}
                                         onChange={handleChange}
                                         value={fields.name}
                                    />
@@ -147,7 +147,7 @@ export default function ContactUs(): ReactElement {
                                         placeholder={
                                              placeholders.emailPlaceholder
                                         }
-                                        email={true}
+                                        type={true}
                                         onChange={handleChange}
                                         value={fields.email}
                                    />
@@ -169,7 +169,7 @@ export default function ContactUs(): ReactElement {
                                         placeholder={
                                              placeholders.subjectPlaceholder
                                         }
-                                        email={false}
+                                        type={false}
                                         onChange={handleChange}
                                         value={fields.subject}
                                    />
