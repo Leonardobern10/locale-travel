@@ -8,10 +8,10 @@ export default function NavBar({ items }: NavBarProps): ReactElement {
      return (
           <nav className="w-fit flex flex-row items-center justify-between md:justify-between gap-x-40">
                {useWidth() && (
-                    <ul className="flex flex-row items-center justify-around gap-x-4 font-hunnin ">
+                    <ul className="flex flex-row items-center justify-around gap-x-4 font-ibm ">
                          {items.map((el, index) => (
                               <li
-                                   className="lg:text-md xl:text-lg font-light text-esmerald text-shadow-sm text-shadow-white hover:cursor-pointer hover:text-shadow-xs"
+                                   className="lg:text-md xl:text-md font-light text-white hover:cursor-pointer hover:underline"
                                    key={index}>
                                    <Link
                                         to={el.href}
@@ -26,12 +26,12 @@ export default function NavBar({ items }: NavBarProps): ReactElement {
                <div className="flex flex-row gap-x-4 ">
                     <LinkRouter
                          to="/register"
-                         className="lg:text-md xl:text-lg font-light font-hunnin text-esmerald text-shadow-sm text-shadow-white hover:cursor-pointer hover:text-shadow-xs">
+                         className="border border-white font-ibm px-3 py-1 rounded hover:bg-white hover:text-black transition">
                          Cadastro
                     </LinkRouter>
                     <LinkRouter
                          to="/login"
-                         className="lg:text-md xl:text-lg font-light font-hunnin text-esmerald text-shadow-sm text-shadow-white hover:cursor-pointer hover:text-shadow-xs">
+                         className="border border-white font-ibm px-3 py-1 rounded hover:bg-white hover:text-black transition">
                          Login
                     </LinkRouter>
                </div>
