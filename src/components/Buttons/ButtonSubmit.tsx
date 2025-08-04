@@ -1,6 +1,6 @@
 import type { ReactElement } from 'react';
-import ButtonDefault from './Buttons/ButtonDefault';
 import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
+import ButtonDefault from './ButtonDefault';
 
 export default function ButtonSubmit(props: {
      isSubmitting: boolean;
