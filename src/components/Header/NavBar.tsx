@@ -1,18 +1,17 @@
 import type { ReactElement } from 'react';
-import ButtonHeader from '../ButtonHeader';
-import { iconsButton } from '@data/ButtonIcons';
 import useWidth from 'src/hooks/useWidth';
 import { Link } from 'react-scroll';
+import { Link as LinkRouter } from 'react-router';
 import type { NavBarProps } from 'src/types/navbar/NavBarProps';
 
 export default function NavBar({ items }: NavBarProps): ReactElement {
      return (
-          <nav className="w-fit flex flex-row items-center justify-between md:justify-evenly gap-x-8">
+          <nav className="w-fit flex flex-row items-center justify-between md:justify-between gap-x-40">
                {useWidth() && (
-                    <ul className="flex flex-row items-center justify-evenly gap-x-8 font-hunnin ">
+                    <ul className="flex flex-row items-center justify-around gap-x-4 font-hunnin ">
                          {items.map((el, index) => (
                               <li
-                                   className="lg:text-md xl:text-lg font-bold text-white text-shadow-2xs text-shadow-black hover:cursor-pointer hover:text-shadow-xs hover:text-shadow-esmerald"
+                                   className="lg:text-md xl:text-lg font-light text-esmerald text-shadow-sm text-shadow-white hover:cursor-pointer hover:text-shadow-xs"
                                    key={index}>
                                    <Link
                                         to={el.href}
@@ -24,10 +23,17 @@ export default function NavBar({ items }: NavBarProps): ReactElement {
                          ))}
                     </ul>
                )}
-               <div className="flex flex-row items-center justify-between gap-x-3">
-                    {iconsButton.map((el, index) => (
-                         <ButtonHeader icon={el} key={index} />
-                    ))}
+               <div className="flex flex-row gap-x-4 ">
+                    <LinkRouter
+                         to="/register"
+                         className="lg:text-md xl:text-lg font-light font-hunnin text-esmerald text-shadow-sm text-shadow-white hover:cursor-pointer hover:text-shadow-xs">
+                         Cadastro
+                    </LinkRouter>
+                    <LinkRouter
+                         to="/login"
+                         className="lg:text-md xl:text-lg font-light font-hunnin text-esmerald text-shadow-sm text-shadow-white hover:cursor-pointer hover:text-shadow-xs">
+                         Login
+                    </LinkRouter>
                </div>
           </nav>
      );
