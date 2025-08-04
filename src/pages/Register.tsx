@@ -2,37 +2,72 @@ import { InputType } from 'src/types/input/InputType';
 import Input from 'src/components/Input';
 import registerImage from '@images/register_image.png';
 import Logo from 'src/components/Logo';
-import ButtonDefault from 'src/components/ButtonDefault';
 import TitleSectionColored from 'src/components/TitleSection';
 import DescriptionText from 'src/components/DescriptionText';
 import { useForm, type SubmitHandler } from 'react-hook-form';
-import { type InputUser, InputUserSchema } from 'src/types/input/InputUser';
+import {
+     type InputRegisterUser,
+     InputUserSchema
+} from 'src/types/input/InputRegisterUser';
 import useWidth from 'src/hooks/useWidth';
-import { createUser } from 'src/services/RegisterService';
+import { createUser } from '@/services/UserService';
 import { zodResolver } from '@hookform/resolvers/zod';
 import ErrorForm from 'src/components/ErrorForm';
 import { RegisterData } from '@data/RegisterData';
 import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 import LinkDefault from 'src/components/LinkDefault';
+import { useState } from 'react';
+import { notifyError, notifySuccess } from '@/services/NotifyService';
+import { PositionToastType } from 'src/types/toast/PositionToastType';
+import { ThemeToastType } from 'src/types/toast/ThemeToastType';
+import { useNavigate, type NavigateFunction } from 'react-router';
+import { ToastContainer } from 'react-toastify';
+import RedirectLink from '@/components/RedirectLink';
+import ButtonSubmit from '@/components/ButtonSubmit';
 
 export default function Register() {
      const {
           register,
           handleSubmit,
           formState: { errors, isValid }
-     } = useForm<InputUser>({
+     } = useForm<InputRegisterUser>({
           resolver: zodResolver(InputUserSchema),
           mode: 'onChange'
      });
+     const isMobile: boolean = useWidth();
+     const navigate: NavigateFunction = useNavigate();
 
-     const onSubmit: SubmitHandler<InputUser> = (data) =>
-          createUser({
-               nome: data.nome,
-               sobrenome: data.sobrenome,
-               idade: Number(data.idade),
-               email: data.email,
-               senha: data.senha
-          });
+     let [isSubmitting, setIsSubmitting] = useState(false);
+
+     const onSubmit: SubmitHandler<InputRegisterUser> = async (data) => {
+          setIsSubmitting(true);
+          try {
+               await createUser({
+                    nome: data.nome,
+                    sobrenome: data.sobrenome,
+                    idade: Number(data.idade),
+                    email: data.email,
+                    senha: data.senha
+               });
+               notifySuccess({
+                    msg: RegisterData.msgToastSuccess,
+                    position: PositionToastType.BOTTOM_RIGHT,
+                    theme: ThemeToastType.LIGHT
+               });
+               setTimeout(() => {
+                    navigate('/login');
+               }, 3000);
+          } catch (error) {
+               notifyError({
+                    msg: RegisterData.msgToastError,
+                    position: PositionToastType.BOTTOM_RIGHT,
+                    theme: ThemeToastType.LIGHT
+               });
+               console.error(error);
+          } finally {
+               setIsSubmitting(false);
+          }
+     };
 
      return (
           <div className="bg-linear-to-b to-esmerald from-neutral-200">
@@ -50,7 +85,7 @@ export default function Register() {
                               />
                          </div>
 
-                         {useWidth() && (
+                         {isMobile && (
                               <div className="h-1/2 flex flex-col justify-between items-start pb-15">
                                    <div className="flex flex-col gap-4">
                                         <TitleSectionColored
@@ -89,7 +124,7 @@ export default function Register() {
                          <div className="flex flex-col items-center justify-between gap-2 w-5/6">
                               <Input
                                    register={register('nome')}
-                                   email={InputType.TEXT}
+                                   type={InputType.TEXT}
                                    id="nome-register"
                                    placeholder="Nome"
                                    required={true}
@@ -101,7 +136,7 @@ export default function Register() {
                               )}
                               <Input
                                    register={register('sobrenome')}
-                                   email={InputType.TEXT}
+                                   type={InputType.TEXT}
                                    id="sobrenome-register"
                                    placeholder="Sobrenome"
                                    required={true}
@@ -113,7 +148,7 @@ export default function Register() {
                               )}
                               <Input
                                    register={register('email')}
-                                   email={InputType.EMAIL}
+                                   type={InputType.EMAIL}
                                    id="email-register"
                                    placeholder="Email"
                                    required={true}
@@ -125,7 +160,7 @@ export default function Register() {
                               )}
                               <Input
                                    register={register('idade')}
-                                   email={InputType.NUMBER}
+                                   type={InputType.NUMBER}
                                    id="idade"
                                    placeholder="Idade"
                                    required={true}
@@ -137,7 +172,7 @@ export default function Register() {
                               )}
                               <Input
                                    register={register('senha')}
-                                   email={InputType.PASSWORD}
+                                   type={InputType.PASSWORD}
                                    id="senha-register"
                                    placeholder="Senha"
                                    required={true}
@@ -149,7 +184,7 @@ export default function Register() {
                               )}
                               <Input
                                    register={register('confirma_senha')}
-                                   email={InputType.PASSWORD}
+                                   type={InputType.PASSWORD}
                                    id="confirm-senha-register"
                                    placeholder="Confirme sua senha"
                                    required={true}
@@ -161,16 +196,22 @@ export default function Register() {
                                         }
                                    />
                               )}
-
-                              <ButtonDefault
-                                   type="submit"
-                                   buttonName={RegisterData.buttonSubmit}
-                                   theme={ButtonThemeType.WHITE}
-                                   disabled={!isValid}
+                              <ButtonSubmit
+                                   isSubmitting={isSubmitting}
+                                   defaultName={RegisterData.buttonSubmit}
+                                   isValid={isValid}
+                              />
+                         </div>
+                         <div>
+                              <RedirectLink
+                                   to="/login"
+                                   str1="Já possui cadastro?"
+                                   str2="e entre em sua conta"
                               />
                          </div>
                     </form>
                </div>
+               <ToastContainer />
           </div>
      );
 }
