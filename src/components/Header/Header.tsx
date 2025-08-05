@@ -11,7 +11,7 @@ export default function Header(): ReactElement {
      return (
           <header
                ref={headerRef}
-               className="bg-black/50 text-white py-4 px-8 flex justify-between items-center fixed w-screen z-50">
+               className="bg-black/50 text-white py-3 px-5 flex justify-between items-center fixed w-screen z-50">
                <Logo />
                <div className="w-fit lg:w-full flex justify-center lg:justify-end">
                     <NavBar items={items} />
