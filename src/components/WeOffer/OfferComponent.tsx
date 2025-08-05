@@ -25,11 +25,11 @@ export default function OfferComponent({
                }}
                className={`${
                     i ? 'self-end  rounded-l-lg' : 'self-start rounded-r-lg'
-               } w-full md:w-1/2 lg:min-h-[300px]`} // 🔧 garantia de altura visível
+               } w-5/6 md:w-1/2 h-50 lg:min-h-[300px]`} // 🔧 garantia de altura visível
           >
                <div
-                    className={`${i ? 'place-self-start  rounded-l-lg' : 'place-self-end  rounded-r-lg'} bg-esmerald/50 shadow-2xl shadow-esmerald min-h-[300px] h-full w-1/2 flex flex-col justify-end items-center md:gap-y-4 pb-8 backdrop-brightness-50 px-2`}>
-                    <h4 className="md:text-2xl xl:text-3xl text-clip text-white font-hunnin font-normal">
+                    className={`${i ? 'place-self-start  rounded-l-lg' : 'place-self-end  rounded-r-lg'} bg-esmerald/50 shadow-2xl shadow-esmerald h-full min-w-1/2 w-fit md:w-1/2 md:min-h-[300px] flex flex-col justify-end items-center md:gap-y-4 pb-8 backdrop-brightness-50 px-2`}>
+                    <h4 className="text-md md:text-2xl xl:text-3xl text-clip text-white font-hunnin font-normal whitespace-nowrap">
                          {offerTitle}
                     </h4>
                     {useWidth() && (
