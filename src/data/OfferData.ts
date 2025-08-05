@@ -47,6 +47,6 @@ export const offerData: Array<OfferDataProps> = [
           index: 5,
           image: offer7,
           offerTitle: 'Online',
-          linkName: 'Plataformas de agendamento online'
+          linkName: 'Agendamento online'
      }
 ];
