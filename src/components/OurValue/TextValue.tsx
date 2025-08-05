@@ -20,7 +20,7 @@ export default function TextValue({
                <ParagraphValue paragraphs={paragraphs} />
                <LinkDefault
                     icon={false}
-                    theme={ButtonThemeType.BLUE}
+                    theme={ButtonThemeType.HOVER_BLUE}
                     linkName={linkName}
                />
           </div>
