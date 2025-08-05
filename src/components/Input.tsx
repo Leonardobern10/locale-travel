@@ -23,7 +23,7 @@ export default function Input(props: {
      return (
           <input
                id={props.id}
-               className={`w-full h-13 border border-white/50 text-neutral-200 px-4 py-2 rounded-xl placeholder:text-neutral-600/50 focus:text-white focus:bg-white/50 focus:outline-none ${props.type === InputType.NUMBER ? 'input-no-spin' : ''}`}
+               className={`w-full h-13 border bg-white/50 border-white/50 text-esmerald font-ibm px-4 py-2 rounded-xl placeholder:text-esmerald focus:text-white focus:bg-black/20 focus:outline-none ${props.type === InputType.NUMBER ? 'input-no-spin' : ''}`}
                type={props.type ?? 'text'}
                placeholder={props.placeholder}
                onChange={handleOnChange}
