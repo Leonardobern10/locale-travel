@@ -1,18 +1,21 @@
+import { ButtonHeaderThemeType } from 'src/types/button/ButtonHeaderThemeType';
 import type { ReactElement, MouseEvent } from 'react';
-import type { IconType } from 'react-icons';
 
-export default function ButtonHeader(props: { icon: IconType }): ReactElement {
+export default function ButtonHeader(props: {
+     title: string;
+     event: () => void;
+     theme?: ButtonHeaderThemeType;
+}): ReactElement {
      const handleClick = (e: MouseEvent<HTMLButtonElement>): void => {
           e.stopPropagation();
+          props.event();
      };
-
-     const RenderIcon = props.icon;
 
      return (
           <button
                onClick={handleClick}
-               className="bg-white rounded-full w-8 h-8 p-2 font-hunnin hover:cursor-pointer">
-               <RenderIcon />
+               className={`${props.theme ?? ButtonHeaderThemeType.DEFAULT} border text-sm border-white font-ibm font-light px-3 py-1 rounded transition hover:cursor-pointer`}>
+               {props.title}
           </button>
      );
 }
