@@ -19,30 +19,22 @@ export default function OfferComponent({
      return (
           <div
                ref={containerRef}
-               className={`relative ${
-                    i ? 'self-end' : 'self-start'
-               } w-[90%] md:w-3/5 lg:min-h-[300px]`} // 🔧 garantia de altura visível
+               style={{
+                    background: `url(${image})`,
+                    backgroundPosition: 'center'
+               }}
+               className={`${
+                    i ? 'self-end  rounded-l-lg' : 'self-start rounded-r-lg'
+               } w-full md:w-1/2 lg:min-h-[300px]`} // 🔧 garantia de altura visível
           >
-               <img
-                    className="w-full h-full object-cover"
-                    src={image}
-                    alt={`Imagem ilustrativa para ${offerTitle}`}
-               />
                <div
-                    className={`absolute inset-0 ${
-                         i ? 'right-4/6' : 'left-4/8'
-                    } bg-emerald-500/40 lg:w-1/2 shadow-offer`}
-               />
-               <div
-                    className={`absolute bottom-3 md:bottom-10 lg:bottom-20 ${
-                         i ? 'left-20' : 'right-20'
-                    } flex flex-col items-center md:gap-y-4`}>
-                    <h4 className="md:text-3xl xl:text-4xl text-clip text-esmerald backdrop-brightness-95 font-ibm text-shadow-2xs text-shadow-white font-bold">
+                    className={`${i ? 'place-self-start  rounded-l-lg' : 'place-self-end  rounded-r-lg'} bg-esmerald/50 shadow-2xl shadow-esmerald min-h-[300px] h-full w-1/2 flex flex-col justify-end items-center md:gap-y-4 pb-8 backdrop-brightness-50 px-2`}>
+                    <h4 className="md:text-2xl xl:text-3xl text-clip text-white font-hunnin font-normal">
                          {offerTitle}
                     </h4>
                     {useWidth() && (
                          <ButtonDefault
-                              theme={ButtonThemeType.WHITE}
+                              theme={ButtonThemeType.BLUE}
                               buttonName={linkName}
                               onClick={() => console.log('ola')}
                          />
