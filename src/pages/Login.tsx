@@ -125,7 +125,7 @@ export default function Login(): ReactElement {
                               )}
                               <Input
                                    register={register('senha')}
-                                   type={InputType.TEXT}
+                                   type={InputType.PASSWORD}
                                    id="senha-register"
                                    placeholder="Senha"
                                    required={true}
