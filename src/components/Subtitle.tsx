@@ -8,7 +8,7 @@ export default function Subtitle(props: {
           <p
                className={`${
                     props.white ? 'text-neutral-100' : 'text-neutral-700/50'
-               } font-bold padding-h-mobile text-md md:text-lg w-fit text-center tracking-wide leading-6 font-hunnin`}>
+               } font-bold padding-h-mobile text-sm md:text-lg w-fit text-center tracking-wide leading-6 font-hunnin`}>
                {props.title}
           </p>
      );

@@ -20,7 +20,7 @@
      @apply md:py-10 lg:py-20;
 }
 .padding-v-mobile {
-     @apply max-lg:py-10;
+     @apply max-md:py-10 max-lg:py-1;
 }
 .padding-h-mobile {
      @apply max-lg:px-10;

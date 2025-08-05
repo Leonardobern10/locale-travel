@@ -25,7 +25,7 @@ export default function OfferComponent({
                }}
                className={`${
                     i ? 'self-end  rounded-l-lg' : 'self-start rounded-r-lg'
-               } w-5/6 md:w-1/2 h-50 lg:min-h-[300px]`} // 🔧 garantia de altura visível
+               } w-5/6 md:w-1/2 h-50 lg:h-full lg:min-h-[300px]`} // 🔧 garantia de altura visível
           >
                <div
                     className={`${i ? 'place-self-start  rounded-l-lg' : 'place-self-end  rounded-r-lg'} bg-esmerald/50 shadow-2xl shadow-esmerald h-full min-w-1/2 w-fit md:w-1/2 md:min-h-[300px] flex flex-col justify-end items-center md:gap-y-4 pb-8 backdrop-brightness-50 px-2`}>

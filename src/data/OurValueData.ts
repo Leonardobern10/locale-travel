@@ -17,8 +17,8 @@ export const ourValueData: Array<OurValueComponentProps> = [
           index: 1,
           title: 'Por que nós?',
           subtitle: 'Sua melhor escolha em viagens personalizadas',
-          text1: 'A experiência combinada de nosso conselho, gestão e colaboradores soma CENTENAS de anos. Temos uma ótima combinação de experiência consolidada e energia jovem.',
-          text2: 'Os serviços que você precisa, nós já fizemos, estamos fazendo e continuaremos fazendo. Estamos todos unidos com um único propósito: oferecer o MELHOR para VOCÊ. Sabemos que cada cliente e organização é diferente e especial à sua maneira. Adoramos criar soluções e programas personalizados que se adequem a você.',
+          text1: 'A experiência combinada de nosso conselho, gestão e colaboradores soma centenas de anos. Temos uma ótima combinação de experiência consolidada e energia jovem.',
+          text2: 'Os serviços que você precisa, nós já fizemos, estamos fazendo e continuaremos fazendo. Estamos todos unidos com um único propósito: oferecer o melhor para você. Sabemos que cada cliente e organização é diferente e especial à sua maneira. Adoramos criar soluções e programas personalizados que se adequem a você.',
           image: image2,
           linkName: 'saiba mais',
           rightPosition: false
