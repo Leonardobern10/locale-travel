@@ -22,7 +22,7 @@ export default function Banner({
                     <DescriptionText description={description} />
                     <LinkDefault
                          icon={true}
-                         theme={ButtonThemeType.BLUE}
+                         theme={ButtonThemeType.HOVER_BLUE}
                          linkName={buttonContent}
                     />
                </div>
