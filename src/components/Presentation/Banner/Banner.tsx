@@ -16,9 +16,9 @@ export default function Banner({
      return (
           <div
                ref={bannerRef}
-               className="p-6 w-full lg:w-5/7 h-screen flex flex-col items-center lg:items-start justify-center lg:justify-end gap-y-4 md:gap-y-12">
+               className="p-6 w-full lg:w-5/7 h-screen flex flex-col items-center lg:items-start justify-center md:justify-evenly lg:justify-end gap-y-4 md:gap-y-12">
                <BannerTitle title={bannerTitle} />
-               <div>
+               <div className="md:w-5/6">
                     <DescriptionText description={description} />
                     <LinkDefault
                          icon={true}

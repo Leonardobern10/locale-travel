@@ -13,7 +13,7 @@ export default function ReadAbout(): ReactElement {
      return (
           <section
                id="section-read-about"
-               className="h-full w-screen flex flex-col items-center justify-between gap-y-20 py-10 padding-h-content padding-v-mobile">
+               className=" h-full w-screen flex flex-col items-center justify-between gap-y-20 py-10 padding-h-content padding-v-mobile">
                <div className="flex flex-col items-center lg:items-start lg:self-start justify-between w-full gap-y-5">
                     <TitleSectionColored
                          title={readAboutData.title}
@@ -30,7 +30,7 @@ export default function ReadAbout(): ReactElement {
                               alt="Imagem de funcionários utilizando computador."
                          />
                     </div>
-                    <div className=" w-5/6 lg:w-1/2 h-full flex flex-col gap-y-10 text-md md:text-lg font-hunnin pt-8">
+                    <div className="w-5/6 md:w-full lg:w-1/2 h-full flex flex-col gap-y-10 text-md md:text-lg font-hunnin pt-8 md:mb-20">
                          <ParagraphValue
                               paragraphs={[
                                    readAboutData.text1,

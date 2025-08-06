@@ -5,12 +5,14 @@ import image from '@images/image_cel.png';
 import Input from '../Input';
 import Subtitle from '../Subtitle';
 import { placeholders, titlesText } from '@data/ContactUsData';
-import useWidth from 'src/hooks/useWidth';
 import useSlide from 'src/hooks/useSlide';
 import { ButtonThemeType } from 'src/types/button/ButtonThemeType';
 import { InputType } from 'src/types/input/InputType';
+import useMobile from '@/hooks/useMobile';
 
 export default function ContactUs(): ReactElement {
+     const isMobile: boolean = useMobile();
+
      const [fields, setFields] = useState({
           name: '',
           email: '',
@@ -87,7 +89,7 @@ export default function ContactUs(): ReactElement {
           <section
                id="section-contact-us"
                className="w-screen h-5/6 flex flex-row font-hunnin">
-               {useWidth() && (
+               {!isMobile && (
                     <div id="img-contact-us" className="lg:w-1/2">
                          <img
                               className="w-full h-full"
